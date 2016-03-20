@@ -3,17 +3,17 @@ import XCTest
 
 class UnitConvertionTests: XCTestCase {
     let epsilon = 1e-15
-    let two_yards = Quantity(amount: 2, unit: yard)
+    let two_yards = Quantity(2, unit: Length.yard)
 
     func testValidUnitConversion() {
-        let result = try? two_yards.convertTo(meter)
+        let result = two_yards.convertTo(Length.meter)
 
         XCTAssertEqualWithAccuracy(result!.amount, 1.8288, accuracy: epsilon)
         XCTAssertEqual(result!.description, "1.8288 m")
     }
 
     func testInvalidUnitConversion() {
-        let result = try? two_yards.convertTo(squareMeter)
+        let result = two_yards.convertTo(Area.squareMeter)
 
         XCTAssertNil(result)
     }

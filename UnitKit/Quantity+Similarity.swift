@@ -1,17 +1,10 @@
 import Foundation
 
-extension Quantity {
-    func isSimilarTo(other: Quantity) -> Bool {
-        let converted = try? other.convertTo(unitDefinition)
+infix operator ~== { associativity left precedence 130 }
 
-        if let x = converted where x == self {
-            return true
-        }
+public func ~==<T, U>(left: Quantity<T>, right: Quantity<U>) -> Bool {
+    guard let converted = right.convertTo(left.unit)
+        where converted == left else { return false }
 
-        return false
-    }
-}
-
-public func ~=(left: Quantity, right: Quantity) -> Bool {
-    return left.isSimilarTo(right)
+    return true
 }

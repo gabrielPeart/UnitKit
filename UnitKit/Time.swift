@@ -1,49 +1,16 @@
 import Foundation
 
-public func nanosecond() -> Unit {
-    return Unit(name: "nanosecond", symbol: "ns", category: UnitKit.Category.Time, ratio: 1e-9)
-}
-
-public func microsecond() -> Unit {
-    return Unit(name: "microsecond", symbol: "μs", category: UnitKit.Category.Time, ratio: 1e-6)
-}
-
-public func millisecond() -> Unit {
-    return Unit(name: "millisecond", symbol: "ms", category: UnitKit.Category.Time, ratio: 1e-3)
-}
-
-public func second() -> Unit {
-    return Unit(name: "second", symbol: "s", category: UnitKit.Category.Time, ratio: 1)
-}
-
-public func minute() -> Unit {
-    return Unit(name: "minute", symbol: "m", category: UnitKit.Category.Time, ratio: 60)
-}
-
-public func hour() -> Unit {
-    return Unit(name: "hour", symbol: "h", category: UnitKit.Category.Time, ratio: 3600)
-}
-
-public func day() -> Unit {
-    return Unit(name: "day", symbol: "d", category: UnitKit.Category.Time, ratio: 86400)
-}
-
-public func week() -> Unit {
-    return Unit(name: "week", symbol: "wk", category: UnitKit.Category.Time, ratio: 604800)
-}
-
-public func month() -> Unit {
-    return Unit(name: "month", symbol: "mo", category: UnitKit.Category.Time, ratio: 2592000)
-}
-
-public func year() -> Unit {
-    return Unit(name: "year", symbol: "y", category: UnitKit.Category.Time, ratio: 31557600)
-}
-
-public func decade() -> Unit {
-    return Unit(name: "decade", symbol: "dec", category: UnitKit.Category.Time, ratio: 31557600e1)
-}
-
-public func century() -> Unit {
-    return Unit(name: "century", symbol: "c", category: UnitKit.Category.Time, ratio: 31557600e2)
+public struct Time {
+    public static let nanosecond = Unit<Time>(name: "nanosecond", symbol: "ns", ratio: 1e-9)
+    public static let microsecond = Unit<Time>(name: "microsecond", symbol: "μs", ratio: 1e-6)
+    public static let millisecond = Unit<Time>(name: "millisecond", symbol: "ms", ratio: 1e-3)
+    public static let second = Unit<Time>(name: "second", symbol: "s", ratio: 1)
+    public static let minute = Unit<Time>(name: "minute", symbol: "m", ratio: 60)
+    public static let hour = Unit<Time>(name: "hour", symbol: "h", ratio: 3600)
+    public static let day = Unit<Time>(name: "day", symbol: "d", ratio: 86400)
+    public static let week = Unit<Time>(name: "week", symbol: "wk", ratio: 604800)
+    public static let month = Unit<Time>(name: "month", symbol: "mo", ratio: 2592000)
+    public static let year = Unit<Time>(name: "year", symbol: "y", ratio: 31557600)
+    public static let decade = Unit<Time>(name: "decade", symbol: "dec", ratio: 31557600e1)
+    public static let century = Unit<Time>(name: "century", symbol: "c", ratio: 31557600e2)
 }

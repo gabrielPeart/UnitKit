@@ -3,8 +3,8 @@ import XCTest
 
 class EqualityTests: XCTestCase {
     func testQuantityEquality() {
-        let ten_meters = Quantity(amount: 10, unit: meter)
-        let another_ten_meters = 2 * Quantity(amount: 5, unit: meter)
+        let ten_meters = Quantity(10, unit: Length.meter)
+        let another_ten_meters = 2 * Quantity(5, unit: Length.meter)
 
         XCTAssertTrue(ten_meters == another_ten_meters)
         XCTAssertEqual(ten_meters, another_ten_meters)
@@ -14,8 +14,8 @@ class EqualityTests: XCTestCase {
     }
 
     func testQuantityDifference() {
-        let ten_meters = Quantity(amount: 10, unit: meter)
-        let five_meters = Quantity(amount: 5, unit: meter)
+        let ten_meters = Quantity(10, unit: Length.meter)
+        let five_meters = Quantity(5, unit: Length.meter)
 
         XCTAssertFalse(ten_meters == five_meters)
         XCTAssertNotEqual(ten_meters, five_meters)
@@ -25,8 +25,8 @@ class EqualityTests: XCTestCase {
     }
 
     func testLongTonAndMetricTonDifference() {
-        let one_metric_ton = Quantity(amount: 1, unit: metricTon)
-        let one_imperial_ton = Quantity(amount: 1, unit: longTon)
+        let one_metric_ton = Quantity(1, unit: Mass.metricTon)
+        let one_imperial_ton = Quantity(1, unit: Mass.longTon)
 
         XCTAssertFalse(one_metric_ton == one_imperial_ton)
         XCTAssertNotEqual(one_metric_ton, one_imperial_ton)
@@ -36,10 +36,8 @@ class EqualityTests: XCTestCase {
     }
 
     func testUnitEquality() {
-        let categoryWeirdVolume = "weirdVolumeUnit"
-
-        let pony = Unit(name: "pony", symbol: "pony", category: categoryWeirdVolume, ratio: 2.957e-5)
-        let anotherPony = Unit(name: "pony", symbol: "pony", category: categoryWeirdVolume, ratio: 2.957e-5)
+        let pony = Unit<Volume>(name: "pony", symbol: "pony", ratio: 2.957e-5)
+        let anotherPony = Unit<Volume>(name: "pony", symbol: "pony", ratio: 2.957e-5)
 
         XCTAssertTrue(pony == anotherPony)
         XCTAssertEqual(pony, anotherPony)
@@ -49,8 +47,8 @@ class EqualityTests: XCTestCase {
     }
 
     func testUnitDifference() {
-        let gole = Unit(name: "gole de cerveja", symbol: "gol", category: "fake volume", ratio: 6e-1)
-        let pingo = Unit(name: "pinguinho", symbol: "pingo", category: "fake volume", ratio: 2e-3)
+        let gole = Unit<Volume>(name: "gole de cerveja", symbol: "gol", ratio: 6e-1)
+        let pingo = Unit<Volume>(name: "pinguinho", symbol: "pingo", ratio: 2e-3)
 
         XCTAssertFalse(gole == pingo)
         XCTAssertNotEqual(gole, pingo)

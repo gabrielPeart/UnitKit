@@ -3,47 +3,42 @@ import XCTest
 
 class SpeedTests: XCTestCase {
     func testKnot() {
-        let quantity = knot()
+        let unit = Speed.knot
 
-        XCTAssertEqual(quantity.name, "knot")
-        XCTAssertEqual(quantity.symbol, "kn")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Speed)
-        XCTAssertEqual(quantity.ratio, 51444e-5)
+        XCTAssertEqual(unit.name, "knot")
+        XCTAssertEqual(unit.symbol, "kn")
+        XCTAssertEqual(unit.ratio, 51444e-5)
     }
 
     func testFootPerSecond() {
-        let quantity = footPerSecond()
+        let unit = Speed.footPerSecond
 
-        XCTAssertEqual(quantity.name, "foot per second")
-        XCTAssertEqual(quantity.symbol, "ft/s")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Speed)
-        XCTAssertEqual(quantity.ratio, 3048e-4)
+        XCTAssertEqual(unit.name, "foot per second")
+        XCTAssertEqual(unit.symbol, "ft/s")
+        XCTAssertEqual(unit.ratio, 3048e-4)
     }
 
     func testMilePerHour() {
-        let quantity = milePerHour()
+        let unit = Speed.milePerHour
 
-        XCTAssertEqual(quantity.name, "mile per hour")
-        XCTAssertEqual(quantity.symbol, "mph")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Speed)
-        XCTAssertEqual(quantity.ratio, 44704e-5)
+        XCTAssertEqual(unit.name, "mile per hour")
+        XCTAssertEqual(unit.symbol, "mph")
+        XCTAssertEqual(unit.ratio, 44704e-5)
     }
 
     func testKilometerPerHour() {
-        let quantity = kilometerPerHour()
+        let unit = Speed.kilometerPerHour
 
-        XCTAssertEqual(quantity.name, "kilometer per hour")
-        XCTAssertEqual(quantity.symbol, "km/h")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Speed)
-        XCTAssertEqual(quantity.ratio, 27778e-5)
+        XCTAssertEqual(unit.name, "kilometer per hour")
+        XCTAssertEqual(unit.symbol, "km/h")
+        XCTAssertEqual(unit.ratio, 27778e-5)
     }
 
     func testMeterPerSecond() {
-        let quantity = meterPerSecond()
+        let unit = Speed.meterPerSecond
 
-        XCTAssertEqual(quantity.name, "meter per second")
-        XCTAssertEqual(quantity.symbol, "m/s")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Speed)
-        XCTAssertEqual(quantity.ratio, 1)
+        XCTAssertEqual(unit.name, "meter per second")
+        XCTAssertEqual(unit.symbol, "m/s")
+        XCTAssertEqual(unit.ratio, 1)
     }
 }

@@ -3,236 +3,210 @@ import XCTest
 
 class VolumeTests: XCTestCase {
     func testFluidramImperial() {
-        let quantity = fluidramImp()
+        let unit = Volume.fluidramImp
 
-        XCTAssertEqual(quantity.name, "fluid dram")
-        XCTAssertEqual(quantity.symbol, "fl dr")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 35516328125e-13)
+        XCTAssertEqual(unit.name, "fluid dram")
+        XCTAssertEqual(unit.symbol, "fl dr")
+        XCTAssertEqual(unit.ratio, 35516328125e-13)
     }
 
     func testTeaspoonImperial() {
-        let quantity = teaspoonImp()
+        let unit = Volume.teaspoonImp
 
-        XCTAssertEqual(quantity.name, "teaspoon")
-        XCTAssertEqual(quantity.symbol, "tsp")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 591939e-8)
+        XCTAssertEqual(unit.name, "teaspoon")
+        XCTAssertEqual(unit.symbol, "tsp")
+        XCTAssertEqual(unit.ratio, 591939e-8)
     }
 
     func testTablespoonImperial() {
-        let quantity = tablespoonImp()
+        let unit = Volume.tablespoonImp
 
-        XCTAssertEqual(quantity.name, "tablespoon")
-        XCTAssertEqual(quantity.symbol, "tbsp")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 177581714e-10)
+        XCTAssertEqual(unit.name, "tablespoon")
+        XCTAssertEqual(unit.symbol, "tbsp")
+        XCTAssertEqual(unit.ratio, 177581714e-10)
     }
 
     func testFluidounceImperial() {
-        let quantity = fluidounceImp()
+        let unit = Volume.fluidounceImp
 
-        XCTAssertEqual(quantity.name, "fluid ounce")
-        XCTAssertEqual(quantity.symbol, "fl oz")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 284130625e-10)
+        XCTAssertEqual(unit.name, "fluid ounce")
+        XCTAssertEqual(unit.symbol, "fl oz")
+        XCTAssertEqual(unit.ratio, 284130625e-10)
     }
 
     func testCupImperial() {
-        let quantity = cupImp()
+        let unit = Volume.cupImp
 
-        XCTAssertEqual(quantity.name, "cup")
-        XCTAssertEqual(quantity.symbol, "cp")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 28413e-5)
+        XCTAssertEqual(unit.name, "cup")
+        XCTAssertEqual(unit.symbol, "cp")
+        XCTAssertEqual(unit.ratio, 28413e-5)
     }
 
     func testPintImperial() {
-        let quantity = pintImp()
+        let unit = Volume.pintImp
 
-        XCTAssertEqual(quantity.name, "pint")
-        XCTAssertEqual(quantity.symbol, "pt")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 56826125e-8)
+        XCTAssertEqual(unit.name, "pint")
+        XCTAssertEqual(unit.symbol, "pt")
+        XCTAssertEqual(unit.ratio, 56826125e-8)
     }
 
     func testQuartImperial() {
-        let quantity = quartImp()
+        let unit = Volume.quartImp
 
-        XCTAssertEqual(quantity.name, "quart")
-        XCTAssertEqual(quantity.symbol, "qt")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 11365225e-7)
+        XCTAssertEqual(unit.name, "quart")
+        XCTAssertEqual(unit.symbol, "qt")
+        XCTAssertEqual(unit.ratio, 11365225e-7)
     }
 
     func testGallonImperial() {
-        let quantity = gallonImp()
+        let unit = Volume.gallonImp
 
-        XCTAssertEqual(quantity.name, "gallon")
-        XCTAssertEqual(quantity.symbol, "gal")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 454609e-5)
+        XCTAssertEqual(unit.name, "gallon")
+        XCTAssertEqual(unit.symbol, "gal")
+        XCTAssertEqual(unit.ratio, 454609e-5)
     }
 
     func testMinimUS() {
-        let quantity = minimUS()
+        let unit = Volume.minimUS
 
-        XCTAssertEqual(quantity.name, "US minim")
-        XCTAssertEqual(quantity.symbol, "US min")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 61611519921875e-18)
+        XCTAssertEqual(unit.name, "US minim")
+        XCTAssertEqual(unit.symbol, "US min")
+        XCTAssertEqual(unit.ratio, 61611519921875e-18)
     }
 
     func testFluidramUS() {
-        let quantity = fluidramUS()
+        let unit = Volume.fluidramUS
 
-        XCTAssertEqual(quantity.name, "US fluidram")
-        XCTAssertEqual(quantity.symbol, "US fl dr")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 36966911953125e-16)
+        XCTAssertEqual(unit.name, "US fluidram")
+        XCTAssertEqual(unit.symbol, "US fl dr")
+        XCTAssertEqual(unit.ratio, 36966911953125e-16)
     }
 
     func testTeaspoonUS() {
-        let quantity = teaspoonUS()
+        let unit = Volume.teaspoonUS
 
-        XCTAssertEqual(quantity.name, "US teaspoon")
-        XCTAssertEqual(quantity.symbol, "US tsp")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 492892159375e-14)
+        XCTAssertEqual(unit.name, "US teaspoon")
+        XCTAssertEqual(unit.symbol, "US tsp")
+        XCTAssertEqual(unit.ratio, 492892159375e-14)
     }
 
     func testTablespoonUS() {
-        let quantity = tablespoonUS()
+        let unit = Volume.tablespoonUS
 
-        XCTAssertEqual(quantity.name, "US tablespoon")
-        XCTAssertEqual(quantity.symbol, "US tbsp")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 1478676478125e-14)
+        XCTAssertEqual(unit.name, "US tablespoon")
+        XCTAssertEqual(unit.symbol, "US tbsp")
+        XCTAssertEqual(unit.ratio, 1478676478125e-14)
     }
 
     func testFluidounceUS() {
-        let quantity = fluidounceUS()
+        let unit = Volume.fluidounceUS
 
-        XCTAssertEqual(quantity.name, "US fluid ounce")
-        XCTAssertEqual(quantity.symbol, "US fl oz")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 295735295625e-13)
+        XCTAssertEqual(unit.name, "US fluid ounce")
+        XCTAssertEqual(unit.symbol, "US fl oz")
+        XCTAssertEqual(unit.ratio, 295735295625e-13)
     }
 
     func testGillUS() {
-        let quantity = gillUS()
+        let unit = Volume.gillUS
 
-        XCTAssertEqual(quantity.name, "US gill")
-        XCTAssertEqual(quantity.symbol, "US gi")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 11829411825e-11)
+        XCTAssertEqual(unit.name, "US gill")
+        XCTAssertEqual(unit.symbol, "US gi")
+        XCTAssertEqual(unit.ratio, 11829411825e-11)
     }
 
     func testCupUS() {
-        let quantity = cupUS()
+        let unit = Volume.cupUS
 
-        XCTAssertEqual(quantity.name, "US cup")
-        XCTAssertEqual(quantity.symbol, "US cp")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 2365882365e-10)
+        XCTAssertEqual(unit.name, "US cup")
+        XCTAssertEqual(unit.symbol, "US cp")
+        XCTAssertEqual(unit.ratio, 2365882365e-10)
     }
 
     func testPintUS() {
-        let quantity = pintUS()
+        let unit = Volume.pintUS
 
-        XCTAssertEqual(quantity.name, "US pint")
-        XCTAssertEqual(quantity.symbol, "US pt")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 473176473e-9)
+        XCTAssertEqual(unit.name, "US pint")
+        XCTAssertEqual(unit.symbol, "US pt")
+        XCTAssertEqual(unit.ratio, 473176473e-9)
     }
 
     func testQuartUS() {
-        let quantity = quartUS()
+        let unit = Volume.quartUS
 
-        XCTAssertEqual(quantity.name, "US quart")
-        XCTAssertEqual(quantity.symbol, "US qt")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 946352946e-9)
+        XCTAssertEqual(unit.name, "US quart")
+        XCTAssertEqual(unit.symbol, "US qt")
+        XCTAssertEqual(unit.ratio, 946352946e-9)
     }
 
     func testGallonUS() {
-        let quantity = gallonUS()
+        let unit = Volume.gallonUS
 
-        XCTAssertEqual(quantity.name, "US gallon")
-        XCTAssertEqual(quantity.symbol, "US gal")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 3785411784e-9)
+        XCTAssertEqual(unit.name, "US gallon")
+        XCTAssertEqual(unit.symbol, "US gal")
+        XCTAssertEqual(unit.ratio, 3785411784e-9)
     }
 
     func testBarrelUS() {
-        let quantity = barrelUS()
+        let unit = Volume.barrelUS
 
-        XCTAssertEqual(quantity.name, "US barrel")
-        XCTAssertEqual(quantity.symbol, "US bbl")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 119240471196e-9)
+        XCTAssertEqual(unit.name, "US barrel")
+        XCTAssertEqual(unit.symbol, "US bbl")
+        XCTAssertEqual(unit.ratio, 119240471196e-9)
     }
 
     func testHogsheadUS() {
-        let quantity = hogsheadUS()
+        let unit = Volume.hogsheadUS
 
-        XCTAssertEqual(quantity.name, "US hogshead")
-        XCTAssertEqual(quantity.symbol, "US hogshead")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 238480942392e-9)
+        XCTAssertEqual(unit.name, "US hogshead")
+        XCTAssertEqual(unit.symbol, "US hogshead")
+        XCTAssertEqual(unit.ratio, 238480942392e-9)
     }
 
     func testMicrolitre() {
-        let quantity = microlitre()
+        let unit = Volume.microlitre
 
-        XCTAssertEqual(quantity.name, "microlitre")
-        XCTAssertEqual(quantity.symbol, "µl")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 1e-6)
+        XCTAssertEqual(unit.name, "microlitre")
+        XCTAssertEqual(unit.symbol, "µl")
+        XCTAssertEqual(unit.ratio, 1e-6)
     }
 
     func testMillilitre() {
-        let quantity = millilitre()
+        let unit = Volume.millilitre
 
-        XCTAssertEqual(quantity.name, "millilitre")
-        XCTAssertEqual(quantity.symbol, "ml")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 1e-3)
+        XCTAssertEqual(unit.name, "millilitre")
+        XCTAssertEqual(unit.symbol, "ml")
+        XCTAssertEqual(unit.ratio, 1e-3)
     }
 
     func testCentilitre() {
-        let quantity = centilitre()
+        let unit = Volume.centilitre
 
-        XCTAssertEqual(quantity.name, "centilitre")
-        XCTAssertEqual(quantity.symbol, "cl")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 1e-2)
+        XCTAssertEqual(unit.name, "centilitre")
+        XCTAssertEqual(unit.symbol, "cl")
+        XCTAssertEqual(unit.ratio, 1e-2)
     }
 
     func testDecilitre() {
-        let quantity = decilitre()
+        let unit = Volume.decilitre
 
-        XCTAssertEqual(quantity.name, "decilitre")
-        XCTAssertEqual(quantity.symbol, "dl")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 1e-1)
+        XCTAssertEqual(unit.name, "decilitre")
+        XCTAssertEqual(unit.symbol, "dl")
+        XCTAssertEqual(unit.ratio, 1e-1)
     }
 
     func testLitre() {
-        let quantity = litre()
+        let unit = Volume.litre
 
-        XCTAssertEqual(quantity.name, "litre")
-        XCTAssertEqual(quantity.symbol, "l")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 1)
+        XCTAssertEqual(unit.name, "litre")
+        XCTAssertEqual(unit.symbol, "l")
+        XCTAssertEqual(unit.ratio, 1)
     }
     
     func testHectolitre() {
-        let quantity = hectolitre()
+        let unit = Volume.hectolitre
         
-        XCTAssertEqual(quantity.name, "hectolitre")
-        XCTAssertEqual(quantity.symbol, "hl")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Volume)
-        XCTAssertEqual(quantity.ratio, 1e2)
+        XCTAssertEqual(unit.name, "hectolitre")
+        XCTAssertEqual(unit.symbol, "hl")
+        XCTAssertEqual(unit.ratio, 1e2)
     }
 }

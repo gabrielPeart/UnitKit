@@ -3,119 +3,106 @@ import XCTest
 
 class MassTests: XCTestCase {
     func testGrain() {
-        let quantity = grain()
+        let unit = Mass.grain
 
-        XCTAssertEqual(quantity.name, "grain")
-        XCTAssertEqual(quantity.symbol, "gr")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 6479891e-11)
+        XCTAssertEqual(unit.name, "grain")
+        XCTAssertEqual(unit.symbol, "gr")
+        XCTAssertEqual(unit.ratio, 6479891e-11)
     }
 
     func testDrachm() {
-        let quantity = drachm()
+        let unit = Mass.drachm
 
-        XCTAssertEqual(quantity.name, "drachm")
-        XCTAssertEqual(quantity.symbol, "dr")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 17718451953125e-16)
+        XCTAssertEqual(unit.name, "drachm")
+        XCTAssertEqual(unit.symbol, "dr")
+        XCTAssertEqual(unit.ratio, 17718451953125e-16)
     }
 
     func testOunce() {
-        let quantity = ounce()
+        let unit = Mass.ounce
 
-        XCTAssertEqual(quantity.name, "ounce")
-        XCTAssertEqual(quantity.symbol, "oz")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 28349523125e-12)
+        XCTAssertEqual(unit.name, "ounce")
+        XCTAssertEqual(unit.symbol, "oz")
+        XCTAssertEqual(unit.ratio, 28349523125e-12)
     }
 
     func testPound() {
-        let quantity = pound()
+        let unit = Mass.pound
 
-        XCTAssertEqual(quantity.name, "pound")
-        XCTAssertEqual(quantity.symbol, "lb")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 45359237e-8)
+        XCTAssertEqual(unit.name, "pound")
+        XCTAssertEqual(unit.symbol, "lb")
+        XCTAssertEqual(unit.ratio, 45359237e-8)
     }
 
     func testStone() {
-        let quantity = stone()
+        let unit = Mass.stone
 
-        XCTAssertEqual(quantity.name, "stone")
-        XCTAssertEqual(quantity.symbol, "st")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 635029e-5)
+        XCTAssertEqual(unit.name, "stone")
+        XCTAssertEqual(unit.symbol, "st")
+        XCTAssertEqual(unit.ratio, 635029e-5)
     }
 
     func testQuarter() {
-        let quantity = quarter()
+        let unit = Mass.quarter
 
-        XCTAssertEqual(quantity.name, "quarter")
-        XCTAssertEqual(quantity.symbol, "qtr")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 1270058636e-8)
+        XCTAssertEqual(unit.name, "quarter")
+        XCTAssertEqual(unit.symbol, "qtr")
+        XCTAssertEqual(unit.ratio, 1270058636e-8)
     }
 
     func testLongTon() {
-        let quantity = longTon()
+        let unit = Mass.longTon
 
-        XCTAssertEqual(quantity.name, "long ton")
-        XCTAssertEqual(quantity.symbol, "t")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 10160469088e-7)
+        XCTAssertEqual(unit.name, "long ton")
+        XCTAssertEqual(unit.symbol, "t")
+        XCTAssertEqual(unit.ratio, 10160469088e-7)
     }
 
     func testMilligram() {
-        let quantity = milligram()
+        let unit = Mass.milligram
 
-        XCTAssertEqual(quantity.name, "milligram")
-        XCTAssertEqual(quantity.symbol, "mg")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 1e-6)
+        XCTAssertEqual(unit.name, "milligram")
+        XCTAssertEqual(unit.symbol, "mg")
+        XCTAssertEqual(unit.ratio, 1e-6)
     }
 
     func testGram() {
-        let quantity = gram()
+        let unit = Mass.gram
 
-        XCTAssertEqual(quantity.name, "gram")
-        XCTAssertEqual(quantity.symbol, "g")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 1e-3)
+        XCTAssertEqual(unit.name, "gram")
+        XCTAssertEqual(unit.symbol, "g")
+        XCTAssertEqual(unit.ratio, 1e-3)
     }
 
     func testDecagram() {
-        let quantity = decagram()
+        let unit = Mass.decagram
 
-        XCTAssertEqual(quantity.name, "decagram")
-        XCTAssertEqual(quantity.symbol, "dg")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 1e-2)
+        XCTAssertEqual(unit.name, "decagram")
+        XCTAssertEqual(unit.symbol, "dg")
+        XCTAssertEqual(unit.ratio, 1e-2)
     }
 
     func testKilogram() {
-        let quantity = kilogram()
+        let unit = Mass.kilogram
 
-        XCTAssertEqual(quantity.name, "kilogram")
-        XCTAssertEqual(quantity.symbol, "kg")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 1.0)
+        XCTAssertEqual(unit.name, "kilogram")
+        XCTAssertEqual(unit.symbol, "kg")
+        XCTAssertEqual(unit.ratio, 1.0)
     }
 
     func testMegagram() {
-        let quantity = megagram()
+        let unit = Mass.megagram
 
-        XCTAssertEqual(quantity.name, "megagram")
-        XCTAssertEqual(quantity.symbol, "Mg")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 1e3)
+        XCTAssertEqual(unit.name, "megagram")
+        XCTAssertEqual(unit.symbol, "Mg")
+        XCTAssertEqual(unit.ratio, 1e3)
     }
 
     func testMetricTon() {
-        let quantity = metricTon()
+        let unit = Mass.metricTon
 
-        XCTAssertEqual(quantity.name, "metric ton")
-        XCTAssertEqual(quantity.symbol, "t")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Mass)
-        XCTAssertEqual(quantity.ratio, 1e3)
+        XCTAssertEqual(unit.name, "metric ton")
+        XCTAssertEqual(unit.symbol, "t")
+        XCTAssertEqual(unit.ratio, 1e3)
     }
 }

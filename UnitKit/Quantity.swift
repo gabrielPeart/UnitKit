@@ -1,34 +1,22 @@
 import Foundation
 
-public struct Quantity : CustomStringConvertible {
+public struct Quantity<T> : CustomStringConvertible {
     public let amount: Double
-    public let unitDefinition: UnitDefinition
-
-    public enum QuantityError: ErrorType {
-        case DifferentCategories(got: Unit, expected: Unit)
-    }
-
-    var unit: Unit {
-        return unitDefinition()
-    }
+    public let unit: Unit<T>
 
     public var description: String {
         return "\(amount) \(unit.symbol)"
     }
 
-    public init(amount: Double, unit: UnitDefinition) {
+    public init(_ amount: Double, unit: Unit<T>) {
         self.amount = amount
-        self.unitDefinition = unit
+        self.unit = unit
     }
 
-    public func convertTo(newUnit: UnitDefinition) throws -> Quantity {
-        let newUnitDefinition = newUnit()
+    public func convertTo<U>(anotherUnit: Unit<U>) -> Quantity<U>? {
+        guard unit.canBeConvertedInto(anotherUnit) else { return nil }
 
-        guard unit.category == newUnitDefinition.category else {
-            throw QuantityError.DifferentCategories(got: newUnitDefinition, expected: unit)
-        }
-
-        let newAmount = (amount * unit.ratio) / (newUnitDefinition.ratio)
-        return Quantity(amount: newAmount, unit: newUnit)
+        let newAmount = (amount * unit.ratio) / (anotherUnit.ratio)
+        return Quantity<U>(newAmount, unit: anotherUnit)
     }
 }

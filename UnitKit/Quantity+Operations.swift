@@ -1,29 +1,29 @@
 import Foundation
 
-public func *(left: Double, right: Quantity) -> Quantity {
-    let newAmount = left * right.amount
-    let newUnitDefinition = right.unitDefinition
+public func *<T>(left: Double, right: Quantity<T>) -> Quantity<T> {
+    let amount = left * right.amount
+    let unit = right.unit
 
-    return Quantity(amount: newAmount, unit: newUnitDefinition)
+    return Quantity(amount, unit: unit)
 }
 
-public func /(left: Quantity, right: Double) -> Quantity {
-    let newAmount = left.amount / right
-    let newUnitDefinition = left.unitDefinition
+public func /<T>(left: Quantity<T>, right: Double) -> Quantity<T> {
+    let amount = left.amount / right
+    let unit = left.unit
 
-    return Quantity(amount: newAmount, unit: newUnitDefinition)
+    return Quantity(amount, unit: unit)
 }
 
-public func +(left: Quantity, right: Quantity) -> Quantity {
-    let newAmount = (left.amount * left.unit.ratio) + (right.amount * right.unit.ratio)
-    let newUnitDefinition = left.unitDefinition
+public func +<T>(left: Quantity<T>, right: Quantity<T>) -> Quantity<T> {
+    let amount = (left.amount * left.unit.ratio) + (right.amount * right.unit.ratio)
+    let unit = left.unit
 
-    return Quantity(amount: newAmount, unit: newUnitDefinition)
+    return Quantity(amount, unit: unit)
 }
 
-public func -(left: Quantity, right: Quantity) -> Quantity {
-    let newAmount = (left.amount * left.unit.ratio) - (right.amount * right.unit.ratio)
-    let newUnitDefinition = left.unitDefinition
+public func -<T>(left: Quantity<T>, right: Quantity<T>) -> Quantity<T> {
+    let amount = (left.amount * left.unit.ratio) - (right.amount * right.unit.ratio)
+    let unit = left.unit
 
-    return Quantity(amount: newAmount, unit: newUnitDefinition)
+    return Quantity(amount, unit: unit)
 }

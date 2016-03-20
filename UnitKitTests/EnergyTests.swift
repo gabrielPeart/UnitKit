@@ -3,56 +3,50 @@ import XCTest
 
 class EnergyTests: XCTestCase {
     func testCalorie() {
-        let quantity = calorie()
+        let unit = Energy.calorie
 
-        XCTAssertEqual(quantity.name, "calorie")
-        XCTAssertEqual(quantity.symbol, "cal")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Energy)
-        XCTAssertEqual(quantity.ratio, 1.0)
+        XCTAssertEqual(unit.name, "calorie")
+        XCTAssertEqual(unit.symbol, "cal")
+        XCTAssertEqual(unit.ratio, 4.1868)
     }
 
     func testKiloCalorie() {
-        let quantity = kiloCalorie()
+        let unit = Energy.kiloCalorie
 
-        XCTAssertEqual(quantity.name, "kiloCalorie")
-        XCTAssertEqual(quantity.symbol, "kcal")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Energy)
-        XCTAssertEqual(quantity.ratio, 1e3)
+        XCTAssertEqual(unit.name, "kiloCalorie")
+        XCTAssertEqual(unit.symbol, "kcal")
+        XCTAssertEqual(unit.ratio, 4186.8)
     }
 
     func testJoule() {
-        let quantity = joule()
+        let unit = Energy.joule
 
-        XCTAssertEqual(quantity.name, "joule")
-        XCTAssertEqual(quantity.symbol, "J")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Energy)
-        XCTAssertEqual(quantity.ratio, 2388459e-7)
+        XCTAssertEqual(unit.name, "joule")
+        XCTAssertEqual(unit.symbol, "J")
+        XCTAssertEqual(unit.ratio, 1)
     }
 
     func testKiloJoule() {
-        let quantity = kiloJoule()
+        let unit = Energy.kiloJoule
 
-        XCTAssertEqual(quantity.name, "kiloJoule")
-        XCTAssertEqual(quantity.symbol, "kJ")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Energy)
-        XCTAssertEqual(quantity.ratio, 2388459e-4)
+        XCTAssertEqual(unit.name, "kiloJoule")
+        XCTAssertEqual(unit.symbol, "kJ")
+        XCTAssertEqual(unit.ratio, 1000)
     }
 
     func testMegaJoule() {
-        let quantity = megaJoule()
+        let unit = Energy.megaJoule
 
-        XCTAssertEqual(quantity.name, "megaJoule")
-        XCTAssertEqual(quantity.symbol, "MJ")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Energy)
-        XCTAssertEqual(quantity.ratio, 2388459e-1)
+        XCTAssertEqual(unit.name, "megaJoule")
+        XCTAssertEqual(unit.symbol, "MJ")
+        XCTAssertEqual(unit.ratio, 1000000)
     }
 
     func testGigaJoule() {
-        let quantity = gigaJoule()
+        let unit = Energy.gigaJoule
 
-        XCTAssertEqual(quantity.name, "gigaJoule")
-        XCTAssertEqual(quantity.symbol, "GJ")
-        XCTAssertEqual(quantity.category, UnitKit.Category.Energy)
-        XCTAssertEqual(quantity.ratio, 2388459e2)
+        XCTAssertEqual(unit.name, "gigaJoule")
+        XCTAssertEqual(unit.symbol, "GJ")
+        XCTAssertEqual(unit.ratio, 1000000000)
     }
 }

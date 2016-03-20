@@ -3,9 +3,9 @@ import XCTest
 
 class OperationsTest: XCTestCase {
     let epsilon = 1e-15
-    let five_meters = Quantity(amount: 5, unit: meter)
-    let ten_inches = Quantity(amount: 10, unit: inch)
-    let two_yards = Quantity(amount: 2, unit: yard)
+    let five_meters = Quantity(5, unit: Length.meter)
+    let ten_inches = Quantity(10, unit: Length.inch)
+    let two_yards = Quantity(2, unit: Length.yard)
 
     func testAddition() {
         let result = five_meters + ten_inches
@@ -33,5 +33,12 @@ class OperationsTest: XCTestCase {
 
         XCTAssertEqual(result.description, "5.0 in")
         XCTAssertEqualWithAccuracy(result.amount, 5.0, accuracy: epsilon)
+    }
+
+    func testThemAllTogether() {
+        let result = five_meters + 5 * ten_inches - two_yards / 2
+
+        XCTAssertEqual(result.description, "5.3556 m")
+        XCTAssertEqualWithAccuracy(result.amount, 5.3556, accuracy: epsilon)
     }
 }
