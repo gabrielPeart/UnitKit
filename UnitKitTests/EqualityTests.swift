@@ -3,36 +3,25 @@ import XCTest
 
 class EqualityTests: XCTestCase {
     func testQuantityEquality() {
-        let ten_meters = Quantity(10, unit: Length.meter)
-        let another_ten_meters = 2 * Quantity(5, unit: Length.meter)
+        let tenMeters = Quantity(10, unit: Length.meter)
+        let anotherTenMeters = 2 * Quantity(5, unit: Length.meter)
 
-        XCTAssertTrue(ten_meters == another_ten_meters)
-        XCTAssertEqual(ten_meters, another_ten_meters)
+        XCTAssertTrue(tenMeters == anotherTenMeters)
+        XCTAssertEqual(tenMeters, anotherTenMeters)
 
-        XCTAssertTrue(another_ten_meters == ten_meters)
-        XCTAssertEqual(another_ten_meters, ten_meters)
+        XCTAssertTrue(anotherTenMeters == tenMeters)
+        XCTAssertEqual(anotherTenMeters, tenMeters)
     }
 
     func testQuantityDifference() {
-        let ten_meters = Quantity(10, unit: Length.meter)
-        let five_meters = Quantity(5, unit: Length.meter)
+        let tenMeters = Quantity(10, unit: Length.meter)
+        let fiveMeters = Quantity(5, unit: Length.meter)
 
-        XCTAssertFalse(ten_meters == five_meters)
-        XCTAssertNotEqual(ten_meters, five_meters)
+        XCTAssertFalse(tenMeters == fiveMeters)
+        XCTAssertNotEqual(tenMeters, fiveMeters)
 
-        XCTAssertFalse(five_meters == ten_meters)
-        XCTAssertNotEqual(five_meters, ten_meters)
-    }
-
-    func testLongTonAndMetricTonDifference() {
-        let one_metric_ton = Quantity(1, unit: Mass.metricTon)
-        let one_imperial_ton = Quantity(1, unit: Mass.longTon)
-
-        XCTAssertFalse(one_metric_ton == one_imperial_ton)
-        XCTAssertNotEqual(one_metric_ton, one_imperial_ton)
-
-        XCTAssertFalse(one_imperial_ton == one_metric_ton)
-        XCTAssertNotEqual(one_imperial_ton, one_metric_ton)
+        XCTAssertFalse(fiveMeters == tenMeters)
+        XCTAssertNotEqual(fiveMeters, tenMeters)
     }
 
     func testUnitEquality() {

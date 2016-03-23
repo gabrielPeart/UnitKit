@@ -11,9 +11,7 @@ public struct Unit<T> {
         self.ratio = ratio
     }
 
-    func canBeConvertedInto<U>(unit: U) -> Bool {
-        guard let _ = self as? U else { return false }
-
-        return true
+    func isEqual(unit: Unit<T>) -> Bool {
+        return name == unit.name && symbol == unit.symbol && ratio == unit.ratio
     }
 }

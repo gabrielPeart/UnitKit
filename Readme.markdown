@@ -8,9 +8,9 @@ From Wikipedia:
 
 **UnitKit** is a pretty simple framework for creating, converting, and comparing units and physical quantities in Swift.
 
-It supports *quantity operations* and *unit conversion* for several units right out of the box. Feel free to submit pull requests in case **UnitKit** doesn't have support for the unit you need.
+It supports quantity operations and comparison, and unit conversion for several units right out of the box. Feel free to submit pull requests in case **UnitKit** doesn't have support for the unit you need.
 
-On the technical side, UnitKit implements the Quantity Pattern, explained by Martin Fowler in this article entitled [Quantity](http://martinfowler.com/eaaDev/quantity.html).
+On the technical side, UnitKit implements the Quantity Pattern, described by Martin Fowler in this article entitled [Quantity](http://martinfowler.com/eaaDev/quantity.html).
 
 ## Quantity Operation
 
@@ -38,27 +38,21 @@ result = tenInches / 2
 
 ## Unit Conversion
 
-Unit conversion respects the category of the unit, and for this reason it returns an *optional* Quantity.
+Unit conversion respects the category of the unit. Conversion between two different unit categories will result in compilation error.
 
 In other works, length can be converted into length, area into area, and so on.
 
 ```swift
 let twoYards = Quantity(2, unit: Length.yard)
 let result = two_yards.convertTo(Length.meter)
-// Optional(1.8288 m)
-```
-
-When **UnitKit** fails to convert a unit (when two physical quantities belong to different categories), it returns ``nil``.
-
-```swift
-let twoYards = Quantity(2, unit: Length.yard)
-let result = two_yards.convertTo(Time.second)
-// nil
+// 1.8288 m
 ```
 
 ## Quantity Comparison
 
-There are two ways to compare quantities. The ``==`` operator should be used to compare physical quantities that express the same unit.
+The following comparisons are present for quantities ``>``, ``>=``, ``<``, ``<=``, ``==``, and ``~==``.
+
+The ``==`` operator should be used to compare physical quantities that express the same unit.
 
 ```swift
 let tenMeters = Quantity(10, unit: Length.meter)
@@ -98,7 +92,7 @@ extension Volume {
 
 let umGole = Quantity(1, unit: Volume.gole)
 let result = umGole.convertTo(Volume.litre)
-// Optional(0.6 l)
+// 0.6 l
 ```
 
 ### Adding a new unit to a new category
@@ -113,7 +107,7 @@ struct Force {
 
 let force = Quantity(0.3, unit: Force.newton)
 let result = force.convertTo(Force.poundForce)
-// Optional(0.0674460431654676 lbf)
+// 0.0674460431654676 lbf
 ```
 
 # License
