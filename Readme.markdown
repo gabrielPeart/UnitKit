@@ -1,7 +1,5 @@
 # UnitKit
 
-![](https://upload.wikimedia.org/wikipedia/commons/a/a3/Weights_and_Measures_office.jpg)
-
 From Wikipedia:
 
 > (...) for example, length is a **physical quantity**. The metre is a unit of length that represents a definite predetermined length. When we say 10 metres (or 10 m), we actually mean 10 times the definite predetermined length called *metre*.
@@ -16,7 +14,7 @@ On the technical side, UnitKit implements the Quantity Pattern, described by Mar
 
 With **UnitKit** it's possible to add and subtract quantities as well as multiply and divide quantities by scalars.
 
-When adding and subtracting quantities, the result will be of the same unit of the first quantity. Below, the result is in meters because *5 meters* is the first quantity on the operation.
+When adding and subtracting quantities, the result will be of the same unit of the first quantity. Below, the result is in meters because *5 meters* is the first quantity in the operation.
 
 ```swift
 let fiveMeters = Quantity(5, unit: Length.meter)
@@ -60,13 +58,13 @@ let anotherTenMeters = 2 * Quantity(5, unit: Length.meter)
 let result = tenMeters == anotherTenMeters
 // true
 
-let metricTon = Quantity(1, unit: metricTon)
-let imperialTon = Quantity(1, unit: longTon)
-let result = one_metric_ton == one_imperial_ton
+let tenMeters = Quantity(10, unit: Length.meter)
+let fifteenMeters = 3 * Quantity(5, unit: Length.meter)
+let result = tenMeters == fifteenMeters
 // false
 ```
 
-The ``~==`` operator should be used to compare physical quantifies that use the same category of units.
+The ``~==`` operator should be used to compare physical quantities from the same category.
 
 ```swift
 let speed_kph = Quantity(72, unit: kilometerPerHour)
@@ -77,7 +75,7 @@ let result = speed_kph ~== speed_mph
 
 ## How to Extend it?
 
-The goal for **UnitKit** is to implement most of the [Units of Measurement](https://en.wikipedia.org/wiki/Conversion_of_units) listed on this Wikipedia page. For now, only the most common units are implemented.
+The goal for **UnitKit** is to have most of the [Units of Measurement](https://en.wikipedia.org/wiki/Conversion_of_units) listed on this Wikipedia page implemented. For now, only the most common units are implemented.
 
 But UnitKit was designed to be extensible, so it's possible to extend a category to add new units and even create new categories with their own units.
 
@@ -91,7 +89,7 @@ extension Volume {
 }
 
 let umGole = Quantity(1, unit: Volume.gole)
-let result = umGole.convertTo(Volume.litre)
+let result = umGole.convertTo(Volume.liter)
 // 0.6 l
 ```
 
@@ -118,4 +116,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
