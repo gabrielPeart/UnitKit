@@ -1,0 +1,9 @@
+language: objective-c
+osx_image: xcode7.3
+xcode_project: UnitKit.xcodeproj
+xcode_scheme: UnitKit
+xcode_sdk: iphonesimulator9.3
+
+script:
+- open -b com.apple.iphonesimulator
+- xcodebuild -project UnitKit.xcodeproj -scheme UnitKit -sdk iphonesimulator9.3 build test

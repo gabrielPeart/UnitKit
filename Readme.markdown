@@ -1,5 +1,7 @@
 # UnitKit
 
+[![Build Status](https://travis-ci.org/otaviocc/UnitKit.svg?branch=master)](https://travis-ci.org/otaviocc/UnitKit)
+
 From Wikipedia:
 
 > (...) for example, length is a **physical quantity**. The metre is a unit of length that represents a definite predetermined length. When we say 10 metres (or 10 m), we actually mean 10 times the definite predetermined length called *metre*.
@@ -42,7 +44,7 @@ In other works, length can be converted into length, area into area, and so on.
 
 ```swift
 let twoYards = Quantity(2, unit: Length.yard)
-let result = two_yards.convertTo(Length.meter)
+let result = twoYards.convertTo(Length.meter)
 // 1.8288 m
 ```
 
