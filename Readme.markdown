@@ -49,7 +49,7 @@ result = tenInches / 2
 
 Unit conversion respects the category of the unit. Conversion between two different unit categories will result in compilation error.
 
-In other works, length can be converted into length, area into area, and so on.
+In other words, length can be converted into length, area into area, and so on.
 
 ```swift
 let twoYards = Quantity(2, unit: Length.yard)
