@@ -1,4 +1,4 @@
-# xcode noise
+# xcode
 
 *.pbxuser
 *.perspective
@@ -9,7 +9,10 @@ xcuserdata
 build/*
 DerivedData/
 
-# osx noise
+# appcode
+.idea/*
+
+# osx
 
 .DS_Store
 profile
