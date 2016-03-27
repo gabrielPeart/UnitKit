@@ -2,15 +2,24 @@
 
 [![Build Status](https://travis-ci.org/otaviocc/UnitKit.svg?branch=master)](https://travis-ci.org/otaviocc/UnitKit)
 
-From Wikipedia:
-
-> (...) for example, length is a **physical quantity**. The metre is a unit of length that represents a definite predetermined length. When we say 10 metres (or 10 m), we actually mean 10 times the definite predetermined length called *metre*.
+> (...) for example, length is a **physical quantity**. The metre is a unit of length that represents a definite predetermined length. When we say 10 metres (or 10 m), we actually mean 10 times the definite predetermined length called *metre* -- Wikipedia
 
 **UnitKit** is a pretty simple framework for creating, converting, and comparing units and physical quantities in Swift.
 
 It supports quantity operations and comparison, and unit conversion for several units right out of the box. Feel free to submit pull requests in case **UnitKit** doesn't have support for the unit you need.
 
 On the technical side, UnitKit implements the Quantity Pattern, described by Martin Fowler in this article entitled [Quantity](http://martinfowler.com/eaaDev/quantity.html).
+
+* [UnitKit](#unitkit)
+    * [Quantity Operation](#quantity-operation)
+    * [Unit Conversion](#unit-conversion)
+    * [Quantity Comparison](#quantity-comparison)
+    * [Extending it](#extending-it)
+	    * [Adding a new unit to an existing category](#adding-a-new-unit-to-an-existing-category)
+	    * [Adding a new unit to a new category](#adding-a-new-unit-to-a-new-category)
+	* [List of units in UnitKit](#list-of-units-in-unitkit)
+* [Contributing](#contributing)
+* [License](#license)
 
 ## Quantity Operation
 
@@ -75,11 +84,11 @@ let result = speed_kph ~== speed_mph
 // true
 ```
 
-## How to Extend it?
+## Extending it
 
 The goal for **UnitKit** is to have most of the [Units of Measurement](https://en.wikipedia.org/wiki/Conversion_of_units) listed on this Wikipedia page implemented. For now, only the most common units are implemented.
 
-But UnitKit was designed to be extensible, so it's possible to extend a category to add new units and even create new categories with their own units.
+But UnitKit was designed to allow customization. It's possible to extend a category to add new units and even create new categories with their own units.
 
 ### Adding a new unit to an existing category
 
@@ -109,6 +118,133 @@ let force = Quantity(0.3, unit: Force.newton)
 let result = force.convertTo(Force.poundForce)
 // 0.0674460431654676 lbf
 ```
+
+## List of units in UnitKit
+
+* Area
+	* Acres
+	* Ares
+	* Hectares
+	* Square Centimeters
+	* Square Decimeters
+	* Square Feet
+	* Square Inches
+	* Square Kilometers
+	* Square Meters
+	* Square Miles
+	* Square Millimeters
+	* Square Yards
+* Energy
+	* Calories
+	* Electron Volts
+	* Foot Pound Force
+	* Inch Pound Force
+	* Joules
+	* Kilocalories
+	* Kilojoules
+	* Kilowatt-hours
+	* Megajoules
+	* Newton Meters
+	* Therms
+* Force
+	* Dynes
+	* Kilogram Force
+	* Kip
+	* Newtons
+	* Ounce Force
+	* Poundals
+	* Pound Force
+* Length
+	* Ångströms
+	* Centimeters
+	* Chains
+	* Feet
+	* Furlongs
+	* Inches
+	* Kilometers
+	* Meters
+	* Microns
+	* Mils
+	* Miles
+	* Miles (Nautical)
+	* Millimeters
+	* Yards
+* Pressure
+	* Atmospheres
+	* Bars
+	* Inches of Mercury
+	* Inches of Water
+	* Kilopascals
+	* Millibars
+	* Millimeters of Mercury
+	* Millimeters of Water
+	* Pascals
+	* Pounds per Square Inch
+	* Torr
+* Speed
+	* Feet per Second
+	* Kilometers per Hour
+	* Kilometers per Minute
+	* Knots
+	* Meters per Minute
+	* Meters per Second
+	* Miles per Hour
+	* Miles per Minute
+* Time
+	* Centuries
+	* Days
+	* Decades
+	* Hours
+	* Microseconds
+	* Milliseconds
+	* Minutes
+	* Months
+	* Nanoseconds
+	* Seconds
+	* Weeks
+	* Years
+* Volume
+	* Acre-Feet
+	* Barrels (Oil)
+	* Centiliters
+	* Cubic Centimeters
+	* Cubic Feet
+	* Cubic Inches
+	* Cubic Meters
+	* Cubic Yards
+	* Fluid Ounces (UK)
+	* Fluid Ounces (US)
+	* Gallons (UK)
+	* Gallons (US)
+	* Liters
+	* Milliliters
+	* Pints (UK)
+	* Pints (US)
+	* Quarts (US)
+* Weight
+	* Decagrams
+	* Grains
+	* Grams
+	* Kilograms
+	* Milligrams
+	* Ounces
+	* Pounds
+	* Stones
+	* Tonnes
+	* Tons (UK)
+	* Tons (US)
+
+# Contributing
+
+Want to contribute? Sweet!
+
+1. Fork it.
+1. Create a branch (`git checkout -b my_awesome_feature`)
+1. Commit your changes (`git commit -am "Add new awesome feature"`)
+1. Make sure you have tests for the new feature
+1. Push to the branch (`git push origin my_awesome_feature`)
+1. Open a Pull Request
+1. Enjoy a fancy latte and wait
 
 # License
 
