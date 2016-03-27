@@ -4,6 +4,5 @@ xcode_project: UnitKit.xcodeproj
 xcode_scheme: UnitKit
 xcode_sdk: iphonesimulator9.3
 
-script:
-- open -b com.apple.iphonesimulator
-- xcodebuild -project UnitKit.xcodeproj -scheme UnitKit -sdk iphonesimulator9.3 build test
+before_install: 
+- brew uninstall xctool && brew install --HEAD xctool
