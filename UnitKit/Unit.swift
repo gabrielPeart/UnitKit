@@ -11,7 +11,7 @@ public struct Unit<T> {
         self.ratio = ratio
     }
 
-    func isEqual(unit: Unit<T>) -> Bool {
+    func isEqual(to unit: Unit<T>) -> Bool {
         return name == unit.name && symbol == unit.symbol && ratio == unit.ratio
     }
 }
