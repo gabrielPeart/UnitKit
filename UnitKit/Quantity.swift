@@ -62,7 +62,7 @@ public struct Quantity<T> {
 
     func isEqual(to quantity: Quantity<T>) -> Bool {
         return unit == quantity.unit
-            && fabs(amount.distanceTo(quantity.amount)) <= 1e-12
+            && fabs(amount.distance(to: quantity.amount)) <= 1e-12
     }
 
     func isSimilar(to quantity: Quantity<T>) -> Bool {
