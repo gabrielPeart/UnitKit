@@ -53,7 +53,7 @@ In other words, length can be converted into length, area into area, and so on.
 
 ```swift
 let twoYards = Quantity(2, unit: Length.yard)
-let result = twoYards.convertTo(Length.meter)
+let result = twoYards.convert(to: Length.meter)
 // 1.8288 m
 ```
 
@@ -100,7 +100,7 @@ extension Volume {
 }
 
 let umGole = Quantity(1, unit: Volume.gole)
-let result = umGole.convertTo(Volume.liter)
+let result = umGole.convert(to: Volume.liter)
 // 0.6 l
 ```
 
@@ -115,7 +115,7 @@ struct Force {
 }
 
 let force = Quantity(0.3, unit: Force.newton)
-let result = force.convertTo(Force.poundForce)
+let result = force.convert(to: Force.poundForce)
 // 0.0674460431654676 lbf
 ```
 
