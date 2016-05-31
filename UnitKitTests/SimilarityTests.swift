@@ -2,11 +2,11 @@ import XCTest
 @testable import UnitKit
 
 class SimilarityTests: XCTestCase {
-    let kph = Quantity(72.0, unit: Speed.kilometerPerHour)
-    let mph = Quantity(44.73872584108792, unit: Speed.milePerHour)
-    let mps = Quantity(23.0, unit: Speed.meterPerSecond)
-    let oneMetricTon = Quantity(1, unit: Weight.tonne)
-    let oneImperialTon = Quantity(1, unit: Weight.tonUK)
+    let kph = Quantity(72.0, unit: Speed.KilometerPerHour)
+    let mph = Quantity(44.73872584108792, unit: Speed.MilePerHour)
+    let mps = Quantity(23.0, unit: Speed.MeterPerSecond)
+    let oneMetricTon = Quantity(1, unit: Weight.Tonne)
+    let oneImperialTon = Quantity(1, unit: Weight.TonUK)
 
     func testValidQuantitySimilarity() {
         XCTAssertTrue(kph ~== mph)

@@ -4,7 +4,7 @@ public struct Quantity<T> {
     public let amount: Double
     public let unit: Unit<T>
 
-    var absoluteAmount: Double {
+    private var absoluteAmount: Double {
         return amount * unit.ratio
     }
 
@@ -24,12 +24,12 @@ public struct Quantity<T> {
 
     func add(quantity: Quantity<T>) -> Quantity<T> {
         let newAmount = absoluteAmount + quantity.absoluteAmount
-        return Quantity(newAmount, unit: unit)
+        return Quantity(newAmount / unit.ratio, unit: unit)
     }
 
     func subtract(quantity: Quantity<T>) -> Quantity<T> {
         let newAmount = absoluteAmount - quantity.absoluteAmount
-        return Quantity(newAmount, unit: unit)
+        return Quantity(newAmount / unit.ratio, unit: unit)
     }
 
     func multiply(scalar: Double) -> Quantity<T> {

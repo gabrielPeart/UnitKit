@@ -3,7 +3,7 @@ import XCTest
 
 class WeightTests: XCTestCase {
     func testDecagram() {
-        let unit = Weight.decagram
+        let unit = Weight.Decagram
 
         XCTAssertEqual(unit.name, "Decagrams")
         XCTAssertEqual(unit.symbol, "dg")
@@ -11,7 +11,7 @@ class WeightTests: XCTestCase {
     }
 
     func testGrain() {
-        let unit = Weight.grain
+        let unit = Weight.Grain
 
         XCTAssertEqual(unit.name, "Grains")
         XCTAssertEqual(unit.symbol, "gr")
@@ -19,7 +19,7 @@ class WeightTests: XCTestCase {
     }
 
     func testGram() {
-        let unit = Weight.gram
+        let unit = Weight.Gram
 
         XCTAssertEqual(unit.name, "Grams")
         XCTAssertEqual(unit.symbol, "g")
@@ -27,7 +27,7 @@ class WeightTests: XCTestCase {
     }
 
     func testKilogram() {
-        let unit = Weight.kilogram
+        let unit = Weight.Kilogram
 
         XCTAssertEqual(unit.name, "Kilograms")
         XCTAssertEqual(unit.symbol, "kg")
@@ -35,7 +35,7 @@ class WeightTests: XCTestCase {
     }
 
     func testMilligram() {
-        let unit = Weight.milligram
+        let unit = Weight.Milligram
 
         XCTAssertEqual(unit.name, "Milligrams")
         XCTAssertEqual(unit.symbol, "mg")
@@ -43,7 +43,7 @@ class WeightTests: XCTestCase {
     }
 
     func testOunce() {
-        let unit = Weight.ounce
+        let unit = Weight.Ounce
 
         XCTAssertEqual(unit.name, "Ounces")
         XCTAssertEqual(unit.symbol, "oz")
@@ -51,7 +51,7 @@ class WeightTests: XCTestCase {
     }
 
     func testPound() {
-        let unit = Weight.pound
+        let unit = Weight.Pound
 
         XCTAssertEqual(unit.name, "Pounds")
         XCTAssertEqual(unit.symbol, "lb")
@@ -59,7 +59,7 @@ class WeightTests: XCTestCase {
     }
 
     func testStone() {
-        let unit = Weight.stone
+        let unit = Weight.Stone
 
         XCTAssertEqual(unit.name, "Stones")
         XCTAssertEqual(unit.symbol, "st")
@@ -67,7 +67,7 @@ class WeightTests: XCTestCase {
     }
 
     func tesstTonne() {
-        let unit = Weight.tonne
+        let unit = Weight.Tonne
 
         XCTAssertEqual(unit.name, "Tonnes")
         XCTAssertEqual(unit.symbol, "t")
@@ -75,7 +75,7 @@ class WeightTests: XCTestCase {
     }
 
     func testTonUK() {
-        let unit = Weight.tonUK
+        let unit = Weight.TonUK
 
         XCTAssertEqual(unit.name, "Tons (UK)")
         XCTAssertEqual(unit.symbol, "t")
@@ -83,7 +83,7 @@ class WeightTests: XCTestCase {
     }
 
     func testTonUS() {
-        let unit = Weight.tonUS
+        let unit = Weight.TonUS
 
         XCTAssertEqual(unit.name, "Tons (US)")
         XCTAssertEqual(unit.symbol, "t")

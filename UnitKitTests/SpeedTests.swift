@@ -3,7 +3,7 @@ import XCTest
 
 class SpeedTests: XCTestCase {
     func testFootPerSecond() {
-        let unit = Speed.footPerSecond
+        let unit = Speed.FootPerSecond
 
         XCTAssertEqual(unit.name, "Feet per Second")
         XCTAssertEqual(unit.symbol, "ft/s")
@@ -11,7 +11,7 @@ class SpeedTests: XCTestCase {
     }
 
     func testKilometerPerHour() {
-        let unit = Speed.kilometerPerHour
+        let unit = Speed.KilometerPerHour
 
         XCTAssertEqual(unit.name, "Kilometers per Hour")
         XCTAssertEqual(unit.symbol, "km/h")
@@ -19,7 +19,7 @@ class SpeedTests: XCTestCase {
     }
 
     func testKilometerPerMinute() {
-        let unit = Speed.kilometerPerMinute
+        let unit = Speed.KilometerPerMinute
 
         XCTAssertEqual(unit.name, "Kilometers per Minute")
         XCTAssertEqual(unit.symbol, "km/min")
@@ -27,7 +27,7 @@ class SpeedTests: XCTestCase {
     }
 
     func testKnot() {
-        let unit = Speed.knot
+        let unit = Speed.Knot
 
         XCTAssertEqual(unit.name, "Knots")
         XCTAssertEqual(unit.symbol, "kn")
@@ -35,7 +35,7 @@ class SpeedTests: XCTestCase {
     }
 
     func testMeterPerMinute() {
-        let unit = Speed.meterPerMinute
+        let unit = Speed.MeterPerMinute
 
         XCTAssertEqual(unit.name, "Meters per Minute")
         XCTAssertEqual(unit.symbol, "m/min")
@@ -43,7 +43,7 @@ class SpeedTests: XCTestCase {
     }
 
     func testMeterPerSecond() {
-        let unit = Speed.meterPerSecond
+        let unit = Speed.MeterPerSecond
 
         XCTAssertEqual(unit.name, "Meters per Second")
         XCTAssertEqual(unit.symbol, "m/s")
@@ -51,7 +51,7 @@ class SpeedTests: XCTestCase {
     }
 
     func testMilePerHour() {
-        let unit = Speed.milePerHour
+        let unit = Speed.MilePerHour
 
         XCTAssertEqual(unit.name, "Miles per Hour")
         XCTAssertEqual(unit.symbol, "mph")
@@ -59,7 +59,7 @@ class SpeedTests: XCTestCase {
     }
 
     func testMilePerMinute() {
-        let unit = Speed.milePerMinute
+        let unit = Speed.MilePerMinute
 
         XCTAssertEqual(unit.name, "Miles per Minute")
         XCTAssertEqual(unit.symbol, "mi/min")
