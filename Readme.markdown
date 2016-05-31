@@ -28,9 +28,9 @@ With **UnitKit** it's possible to add and subtract quantities as well as multipl
 When adding and subtracting quantities, the result will be of the same unit of the first quantity. Below, the result is in meters because *5 meters* is the first quantity in the operation.
 
 ```swift
-let fiveMeters = Quantity(5, unit: Length.meter)
-let tenInches = Quantity(10, unit: Length.inch)
-let twoYards = Quantity(2, unit: Length.yard)
+let fiveMeters = Quantity(5, unit: Length.Meter)
+let tenInches = Quantity(10, unit: Length.Inch)
+let twoYards = Quantity(2, unit: Length.Yard)
 
 var result = fiveMeters + tenInches
 // 5.254 m
@@ -52,8 +52,8 @@ Unit conversion respects the category of the unit. Conversion between two differ
 In other words, length can be converted into length, area into area, and so on.
 
 ```swift
-let twoYards = Quantity(2, unit: Length.yard)
-let result = twoYards.convertTo(Length.meter)
+let twoYards = Quantity(2, unit: Length.Yard)
+let result = twoYards.convert(to: Length.Meter)
 // 1.8288 m
 ```
 
@@ -64,13 +64,13 @@ The following comparisons are present for quantities ``>``, ``>=``, ``<``, ``<=`
 The ``==`` operator should be used to compare physical quantities that express the same unit.
 
 ```swift
-let tenMeters = Quantity(10, unit: Length.meter)
-let anotherTenMeters = 2 * Quantity(5, unit: Length.meter)
+let tenMeters = Quantity(10, unit: Length.Meter)
+let anotherTenMeters = 2 * Quantity(5, unit: Length.Meter)
 let result = tenMeters == anotherTenMeters
 // true
 
-let tenMeters = Quantity(10, unit: Length.meter)
-let fifteenMeters = 3 * Quantity(5, unit: Length.meter)
+let tenMeters = Quantity(10, unit: Length.Meter)
+let fifteenMeters = 3 * Quantity(5, unit: Length.Meter)
 let result = tenMeters == fifteenMeters
 // false
 ```
@@ -78,8 +78,8 @@ let result = tenMeters == fifteenMeters
 The ``~==`` operator should be used to compare physical quantities from the same category.
 
 ```swift
-let speed_kph = Quantity(72, unit: kilometerPerHour)
-let speed_mph = Quantity(44.7390837508948, unit: milePerHour)
+let speed_kph = Quantity(72, unit: Speed.KilometerPerHour)
+let speed_mph = Quantity(44.7390837508948, unit: Speed.MilePerHour)
 let result = speed_kph ~== speed_mph
 // true
 ```
@@ -96,26 +96,26 @@ To extend an existing category, create a extension with the new unit definition.
 
 ```swift
 extension Volume {
-    static let gole = Unit<Volume>(name: "gole de cerveja", symbol: "gol", ratio: 6e-1)
+    static let Gole = Unit<Volume>(name: "Gole de Cerveja", symbol: "gol", ratio: 6e-1)
 }
 
-let umGole = Quantity(1, unit: Volume.gole)
-let result = umGole.convertTo(Volume.liter)
+let umGole = Quantity(1, unit: Volume.Gole)
+let result = umGole.convert(to: Volume.Liter)
 // 0.6 l
 ```
 
 ### Adding a new unit to a new category
 
-To create a new category, create a ``struct`` for the new category and implement the unit definitions. Example:
+To create a new category, create a ``enum`` for the new category and implement the unit definitions. Example:
 
 ```swift
-struct Force {
-    static let newton = Unit<Force>(name: "newton", symbol: "N", ratio: 1)
-    static let poundForce = Unit<Force>(name: "pound force", symbol: "lbf", ratio: 4448e-3)
+enum Force {
+    static let Newton = Unit<Force>(name: "Newton", symbol: "N", ratio: 1)
+    static let PoundForce = Unit<Force>(name: "Pound Force", symbol: "lbf", ratio: 4448e-3)
 }
 
-let force = Quantity(0.3, unit: Force.newton)
-let result = force.convertTo(Force.poundForce)
+let force = Quantity(0.3, unit: Force.Newton)
+let result = force.convert(to: Force.PoundForce)
 // 0.0674460431654676 lbf
 ```
 
