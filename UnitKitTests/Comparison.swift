@@ -2,9 +2,9 @@ import XCTest
 @testable import UnitKit
 
 class Comparison: XCTestCase {
-    let fiveMeters = Quantity(5, unit: Length.meter)
-    let sixMeters = Quantity(6, unit: Length.meter)
-    let sixYards = Quantity(6, unit: Length.yard)
+    let fiveMeters = Quantity(5, unit: Length.Meter)
+    let sixMeters = Quantity(6, unit: Length.Meter)
+    let sixYards = Quantity(6, unit: Length.Yard)
 
     func testGreaterThanWithSameQuantityAndSameUnit() {
         let result = fiveMeters > fiveMeters

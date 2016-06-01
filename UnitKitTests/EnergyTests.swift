@@ -3,7 +3,7 @@ import XCTest
 
 class EnergyTests: XCTestCase {
     func testCalorie() {
-        let unit = Energy.calorie
+        let unit = Energy.Calorie
 
         XCTAssertEqual(unit.name, "Calories")
         XCTAssertEqual(unit.symbol, "cal")
@@ -11,7 +11,7 @@ class EnergyTests: XCTestCase {
     }
 
     func testElectronVolt() {
-        let unit = Energy.electronVolt
+        let unit = Energy.ElectronVolt
 
         XCTAssertEqual(unit.name, "Electron Volts")
         XCTAssertEqual(unit.symbol, "eV")
@@ -19,7 +19,7 @@ class EnergyTests: XCTestCase {
     }
 
     func testFootPoundForce() {
-        let unit = Energy.footPoundForce
+        let unit = Energy.FootPoundForce
 
         XCTAssertEqual(unit.name, "Foot Pound Force")
         XCTAssertEqual(unit.symbol, "ft-lb")
@@ -27,7 +27,7 @@ class EnergyTests: XCTestCase {
     }
 
     func testInchPoundForce() {
-        let unit = Energy.inchPoundForce
+        let unit = Energy.InchPoundForce
 
         XCTAssertEqual(unit.name, "Inch Pound Force")
         XCTAssertEqual(unit.symbol, "in-lb")
@@ -35,7 +35,7 @@ class EnergyTests: XCTestCase {
     }
 
     func testJoule() {
-        let unit = Energy.joule
+        let unit = Energy.Joule
 
         XCTAssertEqual(unit.name, "Joules")
         XCTAssertEqual(unit.symbol, "J")
@@ -43,7 +43,7 @@ class EnergyTests: XCTestCase {
     }
 
     func testKiloCalorie() {
-        let unit = Energy.kiloCalorie
+        let unit = Energy.KiloCalorie
 
         XCTAssertEqual(unit.name, "Kilocalories")
         XCTAssertEqual(unit.symbol, "kcal")
@@ -51,7 +51,7 @@ class EnergyTests: XCTestCase {
     }
 
     func testKiloJoule() {
-        let unit = Energy.kiloJoule
+        let unit = Energy.KiloJoule
 
         XCTAssertEqual(unit.name, "Kilojoules")
         XCTAssertEqual(unit.symbol, "kJ")
@@ -59,7 +59,7 @@ class EnergyTests: XCTestCase {
     }
 
     func testKilowattHour() {
-        let unit = Energy.kilowattHour
+        let unit = Energy.KilowattHour
 
         XCTAssertEqual(unit.name, "Kilowatt-hours")
         XCTAssertEqual(unit.symbol, "kWh")
@@ -67,7 +67,7 @@ class EnergyTests: XCTestCase {
     }
 
     func testMegaJoule() {
-        let unit = Energy.megaJoule
+        let unit = Energy.MegaJoule
 
         XCTAssertEqual(unit.name, "Megajoules")
         XCTAssertEqual(unit.symbol, "MJ")
@@ -75,7 +75,7 @@ class EnergyTests: XCTestCase {
     }
 
     func testNewtonMeter() {
-        let unit = Energy.newtonMeter
+        let unit = Energy.NewtonMeter
 
         XCTAssertEqual(unit.name, "Newton Meters")
         XCTAssertEqual(unit.symbol, "Nm")
@@ -83,7 +83,7 @@ class EnergyTests: XCTestCase {
     }
 
     func testTherm() {
-        let unit = Energy.therm
+        let unit = Energy.Therm
 
         XCTAssertEqual(unit.name, "Therms")
         XCTAssertEqual(unit.symbol, "thm")

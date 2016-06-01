@@ -3,7 +3,7 @@ import XCTest
 
 class VolumeTests: XCTestCase {
     func testAcreFoot() {
-        let unit = Volume.acreFoot
+        let unit = Volume.AcreFoot
 
         XCTAssertEqual(unit.name, "Acre-Feet")
         XCTAssertEqual(unit.symbol, "ac-ft")
@@ -11,7 +11,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testBarrelOil() {
-        let unit = Volume.barrelOil
+        let unit = Volume.BarrelOil
 
         XCTAssertEqual(unit.name, "Barrels (Oil)")
         XCTAssertEqual(unit.symbol, "bbl")
@@ -19,7 +19,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testCentiliter() {
-        let unit = Volume.centiliter
+        let unit = Volume.Centiliter
 
         XCTAssertEqual(unit.name, "Centiliters")
         XCTAssertEqual(unit.symbol, "cl")
@@ -27,7 +27,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testCubicCentimeter() {
-        let unit = Volume.cubicCentimeter
+        let unit = Volume.CubicCentimeter
 
         XCTAssertEqual(unit.name, "Cubic Centimeters")
         XCTAssertEqual(unit.symbol, "cm^3")
@@ -35,7 +35,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testCubicFoot() {
-        let unit = Volume.cubicFoot
+        let unit = Volume.CubicFoot
 
         XCTAssertEqual(unit.name, "Cubic Feet")
         XCTAssertEqual(unit.symbol, "cu ft")
@@ -43,7 +43,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testCubicInch() {
-        let unit = Volume.cubicInch
+        let unit = Volume.CubicInch
 
         XCTAssertEqual(unit.name, "Cubic Inches")
         XCTAssertEqual(unit.symbol, "cu in")
@@ -51,7 +51,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testCubicMeter() {
-        let unit = Volume.cubicMeter
+        let unit = Volume.CubicMeter
 
         XCTAssertEqual(unit.name, "Cubic Meters")
         XCTAssertEqual(unit.symbol, "m^3")
@@ -59,7 +59,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testCubicYard() {
-        let unit = Volume.cubicYard
+        let unit = Volume.CubicYard
 
         XCTAssertEqual(unit.name, "Cubic Yards")
         XCTAssertEqual(unit.symbol, "cu yd")
@@ -67,7 +67,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testFluidOunceUK() {
-        let unit = Volume.fluidOunceUK
+        let unit = Volume.FluidOunceUK
 
         XCTAssertEqual(unit.name, "Fluid Ounces (UK)")
         XCTAssertEqual(unit.symbol, "fl oz")
@@ -75,7 +75,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testFluidOunceUS() {
-        let unit = Volume.fluidOunceUS
+        let unit = Volume.FluidOunceUS
 
         XCTAssertEqual(unit.name, "Fluid Ounces (US)")
         XCTAssertEqual(unit.symbol, "fl oz")
@@ -83,7 +83,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testGallonUK() {
-        let unit = Volume.gallonUK
+        let unit = Volume.GallonUK
 
         XCTAssertEqual(unit.name, "Gallons (UK)")
         XCTAssertEqual(unit.symbol, "gal")
@@ -91,7 +91,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testGallonUS() {
-        let unit = Volume.gallonUS
+        let unit = Volume.GallonUS
 
         XCTAssertEqual(unit.name, "Gallons (US)")
         XCTAssertEqual(unit.symbol, "gal")
@@ -99,7 +99,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testLiter() {
-        let unit = Volume.liter
+        let unit = Volume.Liter
 
         XCTAssertEqual(unit.name, "Liters")
         XCTAssertEqual(unit.symbol, "l")
@@ -107,7 +107,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testMilliliter() {
-        let unit = Volume.milliliter
+        let unit = Volume.Milliliter
 
         XCTAssertEqual(unit.name, "Milliliters")
         XCTAssertEqual(unit.symbol, "ml")
@@ -115,7 +115,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testPintUK() {
-        let unit = Volume.pintUK
+        let unit = Volume.PintUK
 
         XCTAssertEqual(unit.name, "Pints (UK)")
         XCTAssertEqual(unit.symbol, "pt")
@@ -123,7 +123,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testPintUS() {
-        let unit = Volume.pintUS
+        let unit = Volume.PintUS
 
         XCTAssertEqual(unit.name, "Pints (US)")
         XCTAssertEqual(unit.symbol, "pt")
@@ -131,7 +131,7 @@ class VolumeTests: XCTestCase {
     }
 
     func testQuartUS() {
-        let unit = Volume.quartUS
+        let unit = Volume.QuartUS
 
         XCTAssertEqual(unit.name, "Quarts (US)")
         XCTAssertEqual(unit.symbol, "qt")

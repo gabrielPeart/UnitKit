@@ -3,7 +3,7 @@ import XCTest
 
 class ForceTests: XCTestCase {
     func testDyne() {
-        let unit = Force.dyne
+        let unit = Force.Dyne
 
         XCTAssertEqual(unit.name, "Dynes")
         XCTAssertEqual(unit.symbol, "dyn")
@@ -11,7 +11,7 @@ class ForceTests: XCTestCase {
     }
 
     func testKilogramForce() {
-        let unit = Force.kilogramForce
+        let unit = Force.KilogramForce
 
         XCTAssertEqual(unit.name, "Kilogram Force")
         XCTAssertEqual(unit.symbol, "kgf")
@@ -19,7 +19,7 @@ class ForceTests: XCTestCase {
     }
 
     func testKip() {
-        let unit = Force.kip
+        let unit = Force.Kip
 
         XCTAssertEqual(unit.name, "Kip")
         XCTAssertEqual(unit.symbol, "kip")
@@ -27,7 +27,7 @@ class ForceTests: XCTestCase {
     }
 
     func testNewton() {
-        let unit = Force.newton
+        let unit = Force.Newton
 
         XCTAssertEqual(unit.name, "Newtons")
         XCTAssertEqual(unit.symbol, "N")
@@ -35,7 +35,7 @@ class ForceTests: XCTestCase {
     }
 
     func testOunceForce() {
-        let unit = Force.ounceForce
+        let unit = Force.OunceForce
 
         XCTAssertEqual(unit.name, "Ounce Force")
         XCTAssertEqual(unit.symbol, "ozf")
@@ -43,7 +43,7 @@ class ForceTests: XCTestCase {
     }
 
     func testPoundal() {
-        let unit = Force.poundal
+        let unit = Force.Poundal
 
         XCTAssertEqual(unit.name, "Poundals")
         XCTAssertEqual(unit.symbol, "pdl")
@@ -51,7 +51,7 @@ class ForceTests: XCTestCase {
     }
 
     func testPoundForce() {
-        let unit = Force.poundForce
+        let unit = Force.PoundForce
 
         XCTAssertEqual(unit.name, "Pound Force")
         XCTAssertEqual(unit.symbol, "lbf")
