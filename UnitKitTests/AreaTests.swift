@@ -14,7 +14,7 @@ class AreaTests: XCTestCase {
         let unit = Area.Are
 
         XCTAssertEqual(unit.name, "Ares")
-        XCTAssertEqual(unit.symbol, "dam^2")
+        XCTAssertEqual(unit.symbol, "dam²")
         XCTAssertEqual(unit.ratio, 1e2)
     }
 
@@ -30,7 +30,7 @@ class AreaTests: XCTestCase {
         let unit = Area.SquareCentimeter
 
         XCTAssertEqual(unit.name, "Square Centimeters")
-        XCTAssertEqual(unit.symbol, "cm^2")
+        XCTAssertEqual(unit.symbol, "cm²")
         XCTAssertEqual(unit.ratio, 1e-4)
     }
 
@@ -38,7 +38,7 @@ class AreaTests: XCTestCase {
         let unit = Area.SquareDecimeter
 
         XCTAssertEqual(unit.name, "Square Decimeters")
-        XCTAssertEqual(unit.symbol, "dm^2")
+        XCTAssertEqual(unit.symbol, "dm²")
         XCTAssertEqual(unit.ratio, 1e-2)
     }
 
@@ -62,7 +62,7 @@ class AreaTests: XCTestCase {
         let unit = Area.SquareKilometer
 
         XCTAssertEqual(unit.name, "Square Kilometers")
-        XCTAssertEqual(unit.symbol, "km^2")
+        XCTAssertEqual(unit.symbol, "km²")
         XCTAssertEqual(unit.ratio, 1e6)
     }
 
@@ -70,7 +70,7 @@ class AreaTests: XCTestCase {
         let unit = Area.SquareMeter
 
         XCTAssertEqual(unit.name, "Square Meters")
-        XCTAssertEqual(unit.symbol, "m^2")
+        XCTAssertEqual(unit.symbol, "m²")
         XCTAssertEqual(unit.ratio, 1.0)
     }
 
@@ -86,7 +86,7 @@ class AreaTests: XCTestCase {
         let unit = Area.SquareMillimeter
 
         XCTAssertEqual(unit.name, "Square Millimeters")
-        XCTAssertEqual(unit.symbol, "mm^2")
+        XCTAssertEqual(unit.symbol, "mm²")
         XCTAssertEqual(unit.ratio, 1e-6)
     }
 

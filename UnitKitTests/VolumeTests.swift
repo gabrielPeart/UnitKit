@@ -30,7 +30,7 @@ class VolumeTests: XCTestCase {
         let unit = Volume.CubicCentimeter
 
         XCTAssertEqual(unit.name, "Cubic Centimeters")
-        XCTAssertEqual(unit.symbol, "cm^3")
+        XCTAssertEqual(unit.symbol, "cm³")
         XCTAssertEqual(unit.ratio, 1e-6)
     }
 
@@ -54,7 +54,7 @@ class VolumeTests: XCTestCase {
         let unit = Volume.CubicMeter
 
         XCTAssertEqual(unit.name, "Cubic Meters")
-        XCTAssertEqual(unit.symbol, "m^3")
+        XCTAssertEqual(unit.symbol, "m³")
         XCTAssertEqual(unit.ratio, 1)
     }
 

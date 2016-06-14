@@ -1,8 +1,8 @@
 import Foundation
 
 public struct Quantity<T> {
-    public let amount: Double
-    public let unit: Unit<T>
+    public var amount: Double
+    public var unit: Unit<T>
 
     private var absoluteAmount: Double {
         return amount * unit.ratio
@@ -15,9 +15,14 @@ public struct Quantity<T> {
 
     // MARK: Conversion
 
-    public func convert(to anotherUnit: Unit<T>) -> Quantity<T> {
+    public func converted(to anotherUnit: Unit<T>) -> Quantity<T> {
         let newAmount = absoluteAmount / anotherUnit.ratio
         return Quantity(newAmount, unit: anotherUnit)
+    }
+
+    public mutating func convert(to anotherUnit: Unit<T>) {
+        amount = absoluteAmount / anotherUnit.ratio
+        unit = anotherUnit
     }
 
     // MARK: Operations
@@ -66,7 +71,7 @@ public struct Quantity<T> {
     }
 
     func isSimilar(to quantity: Quantity<T>) -> Bool {
-        let converted = quantity.convert(to: unit)
+        let converted = quantity.converted(to: unit)
         return converted == self
     }
 }
