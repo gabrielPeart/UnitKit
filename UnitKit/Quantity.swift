@@ -15,7 +15,7 @@ public struct Quantity<T> {
 
     // MARK: Conversion
 
-    public func convert(to anotherUnit: Unit<T>) -> Quantity<T> {
+    public func converted(to anotherUnit: Unit<T>) -> Quantity<T> {
         let newAmount = absoluteAmount / anotherUnit.ratio
         return Quantity(newAmount, unit: anotherUnit)
     }
@@ -66,7 +66,7 @@ public struct Quantity<T> {
     }
 
     func isSimilar(to quantity: Quantity<T>) -> Bool {
-        let converted = quantity.convert(to: unit)
+        let converted = quantity.converted(to: unit)
         return converted == self
     }
 }

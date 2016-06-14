@@ -6,7 +6,7 @@ class UnitConvertionTests: XCTestCase {
 
     func testUnitConversion() {
         let twoYards = Quantity(2, unit: Length.Yard)
-        let result = twoYards.convert(to: Length.Meter)
+        let result = twoYards.converted(to: Length.Meter)
 
         XCTAssertEqualWithAccuracy(result.amount, 1.8288, accuracy: epsilon)
         XCTAssertEqual(result.description, "1.8288 m")

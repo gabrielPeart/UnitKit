@@ -25,8 +25,8 @@ class EqualityTests: XCTestCase {
     }
 
     func testUnitEquality() {
-        let pony = Unit<Volume>(name: "pony", symbol: "pony", ratio: 2.957e-5)
-        let anotherPony = Unit<Volume>(name: "pony", symbol: "pony", ratio: 2.957e-5)
+        let pony = UnitKit.Unit<Volume>(name: "pony", symbol: "pony", ratio: 2.957e-5)
+        let anotherPony = UnitKit.Unit<Volume>(name: "pony", symbol: "pony", ratio: 2.957e-5)
 
         XCTAssertTrue(pony == anotherPony)
         XCTAssertEqual(pony, anotherPony)
@@ -36,8 +36,8 @@ class EqualityTests: XCTestCase {
     }
 
     func testUnitDifference() {
-        let gole = Unit<Volume>(name: "gole de cerveja", symbol: "gol", ratio: 6e-1)
-        let pingo = Unit<Volume>(name: "pinguinho", symbol: "pingo", ratio: 2e-3)
+        let gole = UnitKit.Unit<Volume>(name: "gole de cerveja", symbol: "gol", ratio: 6e-1)
+        let pingo = UnitKit.Unit<Volume>(name: "pinguinho", symbol: "pingo", ratio: 2e-3)
 
         XCTAssertFalse(gole == pingo)
         XCTAssertNotEqual(gole, pingo)
