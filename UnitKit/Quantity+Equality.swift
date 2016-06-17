@@ -2,6 +2,6 @@ import Foundation
 
 extension Quantity : Equatable {}
 
-public func ==<T>(left: Quantity<T>, right: Quantity<T>) -> Bool {
-    return left.isEqual(to: right)
+public func ==<T>(lhs: Quantity<T>, rhs: Quantity<T>) -> Bool {
+    return lhs.isEqual(to: rhs)
 }

@@ -1,17 +1,17 @@
 import Foundation
 
-public func ><T>(left: Quantity<T>, right: Quantity<T>) -> Bool {
-    return left.isGreaterThan(quantity: right)
+public func ><T>(lhs: Quantity<T>, rhs: Quantity<T>) -> Bool {
+    return lhs.isGreaterThan(quantity: rhs)
 }
 
-public func >=<T>(left: Quantity<T>, right: Quantity<T>) -> Bool {
-    return left.isGreaterThanOrEqual(quantity: right)
+public func >=<T>(lhs: Quantity<T>, rhs: Quantity<T>) -> Bool {
+    return lhs.isGreaterThanOrEqual(quantity: rhs)
 }
 
-public func <<T>(left: Quantity<T>, right: Quantity<T>) -> Bool {
-    return left.isLessThan(quantity: right)
+public func <<T>(lhs: Quantity<T>, rhs: Quantity<T>) -> Bool {
+    return lhs.isLessThan(quantity: rhs)
 }
 
-public func <=<T>(left: Quantity<T>, right: Quantity<T>) -> Bool {
-    return left.isLessThanOrEqual(quantity: right)
+public func <=<T>(lhs: Quantity<T>, rhs: Quantity<T>) -> Bool {
+    return lhs.isLessThanOrEqual(quantity: rhs)
 }

@@ -2,6 +2,6 @@ import Foundation
 
 extension Unit : Equatable {}
 
-public func ==<T>(left: Unit<T>, right: Unit<T>) -> Bool {
-    return left.isEqual(to: right)
+public func ==<T>(lhs: Unit<T>, rhs: Unit<T>) -> Bool {
+    return lhs.isEqual(to: rhs)
 }

@@ -1,17 +1,17 @@
 import Foundation
 
-public func *<T>(left: Double, right: Quantity<T>) -> Quantity<T> {
-    return right.multiply(scalar: left)
+public func *<T>(lhs: Double, rhs: Quantity<T>) -> Quantity<T> {
+    return rhs.multiply(scalar: lhs)
 }
 
-public func /<T>(left: Quantity<T>, right: Double) -> Quantity<T> {
-    return left.divide(scalar: right)
+public func /<T>(lhs: Quantity<T>, rhs: Double) -> Quantity<T> {
+    return lhs.divide(scalar: rhs)
 }
 
-public func +<T>(left: Quantity<T>, right: Quantity<T>) -> Quantity<T> {
-    return left.add(quantity: right)
+public func +<T>(lhs: Quantity<T>, rhs: Quantity<T>) -> Quantity<T> {
+    return lhs.add(quantity: rhs)
 }
 
-public func -<T>(left: Quantity<T>, right: Quantity<T>) -> Quantity<T> {
-    return left.subtract(quantity: right)
+public func -<T>(lhs: Quantity<T>, rhs: Quantity<T>) -> Quantity<T> {
+    return lhs.subtract(quantity: rhs)
 }
