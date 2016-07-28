@@ -3,9 +3,9 @@ import XCTest
 
 class OperationsTest: XCTestCase {
     let epsilon = 1e-15
-    let fiveMeters = Quantity(5, unit: Length.Meter)
-    let tenInches = Quantity(10, unit: Length.Inch)
-    let twoYards = Quantity(2, unit: Length.Yard)
+    let fiveMeters = Quantity(5, unit: Length.meter)
+    let tenInches = Quantity(10, unit: Length.inch)
+    let twoYards = Quantity(2, unit: Length.yard)
 
     func testAddition() {
         let result = fiveMeters + tenInches

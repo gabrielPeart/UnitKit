@@ -3,7 +3,7 @@ import XCTest
 
 class LengthTests: XCTestCase {
     func testAngstrom() {
-        let unit = Length.Angstrom
+        let unit = Length.angstrom
 
         XCTAssertEqual(unit.name, "Ångströms")
         XCTAssertEqual(unit.symbol, "Å")
@@ -11,7 +11,7 @@ class LengthTests: XCTestCase {
     }
 
     func testCentimeter() {
-        let unit = Length.Centimeter
+        let unit = Length.centimeter
 
         XCTAssertEqual(unit.name, "Centimeters")
         XCTAssertEqual(unit.symbol, "cm")
@@ -19,7 +19,7 @@ class LengthTests: XCTestCase {
     }
 
     func testChain() {
-        let unit = Length.Chain
+        let unit = Length.chain
 
         XCTAssertEqual(unit.name, "Chains")
         XCTAssertEqual(unit.symbol, "ch")
@@ -27,7 +27,7 @@ class LengthTests: XCTestCase {
     }
 
     func testFoot() {
-        let unit = Length.Foot
+        let unit = Length.foot
 
         XCTAssertEqual(unit.name, "Feet")
         XCTAssertEqual(unit.symbol, "ft")
@@ -35,7 +35,7 @@ class LengthTests: XCTestCase {
     }
 
     func testFurlong() {
-        let unit = Length.Furlong
+        let unit = Length.furlong
 
         XCTAssertEqual(unit.name, "Furlongs")
         XCTAssertEqual(unit.symbol, "fur")
@@ -43,7 +43,7 @@ class LengthTests: XCTestCase {
     }
 
     func testInch() {
-        let unit = Length.Inch
+        let unit = Length.inch
 
         XCTAssertEqual(unit.name, "Inches")
         XCTAssertEqual(unit.symbol, "in")
@@ -51,7 +51,7 @@ class LengthTests: XCTestCase {
     }
 
     func testKilometer() {
-        let unit = Length.Kilometer
+        let unit = Length.kilometer
 
         XCTAssertEqual(unit.name, "Kilometers")
         XCTAssertEqual(unit.symbol, "km")
@@ -59,7 +59,7 @@ class LengthTests: XCTestCase {
     }
 
     func testMeter() {
-        let unit = Length.Meter
+        let unit = Length.meter
 
         XCTAssertEqual(unit.name, "Meters")
         XCTAssertEqual(unit.symbol, "m")
@@ -67,7 +67,7 @@ class LengthTests: XCTestCase {
     }
 
     func testMicron() {
-        let unit = Length.Micron
+        let unit = Length.micron
 
         XCTAssertEqual(unit.name, "Microns")
         XCTAssertEqual(unit.symbol, "µ")
@@ -75,7 +75,7 @@ class LengthTests: XCTestCase {
     }
 
     func testMil() {
-        let unit = Length.Mil
+        let unit = Length.mil
 
         XCTAssertEqual(unit.name, "Mils")
         XCTAssertEqual(unit.symbol, "mil")
@@ -83,7 +83,7 @@ class LengthTests: XCTestCase {
     }
 
     func testMile() {
-        let unit = Length.Mile
+        let unit = Length.mile
 
         XCTAssertEqual(unit.name, "Miles")
         XCTAssertEqual(unit.symbol, "mi")
@@ -91,7 +91,7 @@ class LengthTests: XCTestCase {
     }
 
     func testMileNautical() {
-        let unit = Length.MileNautical
+        let unit = Length.mileNautical
 
         XCTAssertEqual(unit.name, "Miles (Nautical)")
         XCTAssertEqual(unit.symbol, "nmi")
@@ -99,7 +99,7 @@ class LengthTests: XCTestCase {
     }
 
     func testMillimeter() {
-        let unit = Length.Millimeter
+        let unit = Length.millimeter
 
         XCTAssertEqual(unit.name, "Millimeters")
         XCTAssertEqual(unit.symbol, "mm")
@@ -107,7 +107,7 @@ class LengthTests: XCTestCase {
     }
 
     func testYard() {
-        let unit = Length.Yard
+        let unit = Length.yard
         
         XCTAssertEqual(unit.name, "Yards")
         XCTAssertEqual(unit.symbol, "yd")

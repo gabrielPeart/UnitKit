@@ -3,7 +3,7 @@ import XCTest
 
 class PressureTests: XCTestCase {
     func testAtmosphere() {
-        let unit = Pressure.Atmosphere
+        let unit = Pressure.atmosphere
 
         XCTAssertEqual(unit.name, "Atmospheres")
         XCTAssertEqual(unit.symbol, "atm")
@@ -11,7 +11,7 @@ class PressureTests: XCTestCase {
     }
 
     func testBar() {
-        let unit = Pressure.Bar
+        let unit = Pressure.bar
 
         XCTAssertEqual(unit.name, "Bars")
         XCTAssertEqual(unit.symbol, "bar")
@@ -19,7 +19,7 @@ class PressureTests: XCTestCase {
     }
 
     func testInchOfMercury() {
-        let unit = Pressure.InchOfMercury
+        let unit = Pressure.inchOfMercury
 
         XCTAssertEqual(unit.name, "Inches of Mercury")
         XCTAssertEqual(unit.symbol, "inHg")
@@ -27,7 +27,7 @@ class PressureTests: XCTestCase {
     }
 
     func testIinchOfWater() {
-        let unit = Pressure.InchOfWater
+        let unit = Pressure.inchOfWater
 
         XCTAssertEqual(unit.name, "Inches of Water")
         XCTAssertEqual(unit.symbol, "inAq")
@@ -35,7 +35,7 @@ class PressureTests: XCTestCase {
     }
 
     func testKilopascal() {
-        let unit = Pressure.Kilopascal
+        let unit = Pressure.kilopascal
 
         XCTAssertEqual(unit.name, "Kilopascals")
         XCTAssertEqual(unit.symbol, "kPa")
@@ -43,7 +43,7 @@ class PressureTests: XCTestCase {
     }
 
     func testMilliBar() {
-        let unit = Pressure.Millibar
+        let unit = Pressure.millibar
 
         XCTAssertEqual(unit.name, "Millibars")
         XCTAssertEqual(unit.symbol, "mbar")
@@ -51,7 +51,7 @@ class PressureTests: XCTestCase {
     }
 
     func testMillimeterOfMercury() {
-        let unit = Pressure.MillimeterOfMercury
+        let unit = Pressure.millimeterOfMercury
 
         XCTAssertEqual(unit.name, "Millimeters of Mercury")
         XCTAssertEqual(unit.symbol, "mmHg")
@@ -59,7 +59,7 @@ class PressureTests: XCTestCase {
     }
 
     func testMillimeterOfWater() {
-        let unit = Pressure.MillimeterOfWater
+        let unit = Pressure.millimeterOfWater
 
         XCTAssertEqual(unit.name, "Millimeters of Water")
         XCTAssertEqual(unit.symbol, "mmAq")
@@ -67,7 +67,7 @@ class PressureTests: XCTestCase {
     }
 
     func testPascal() {
-        let unit = Pressure.Pascal
+        let unit = Pressure.pascal
 
         XCTAssertEqual(unit.name, "Pascals")
         XCTAssertEqual(unit.symbol, "Pa")
@@ -75,7 +75,7 @@ class PressureTests: XCTestCase {
     }
 
     func testPoundPerSquareInch() {
-        let unit = Pressure.PoundPerSquareInch
+        let unit = Pressure.poundPerSquareInch
 
         XCTAssertEqual(unit.name, "Pounds per Square Inch")
         XCTAssertEqual(unit.symbol, "psi")
@@ -83,7 +83,7 @@ class PressureTests: XCTestCase {
     }
 
     func testTorr() {
-        let unit = Pressure.Torr
+        let unit = Pressure.torr
 
         XCTAssertEqual(unit.name, "Torr")
         XCTAssertEqual(unit.symbol, "torr")

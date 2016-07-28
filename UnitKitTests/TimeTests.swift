@@ -3,7 +3,7 @@ import XCTest
 
 class TimeTests: XCTestCase {
     func testCentury() {
-        let unit = Time.Century
+        let unit = Time.century
 
         XCTAssertEqual(unit.name, "Centuries")
         XCTAssertEqual(unit.symbol, "c")
@@ -11,7 +11,7 @@ class TimeTests: XCTestCase {
     }
 
     func testDecade() {
-        let unit = Time.Decade
+        let unit = Time.decade
 
         XCTAssertEqual(unit.name, "Decades")
         XCTAssertEqual(unit.symbol, "dec")
@@ -19,7 +19,7 @@ class TimeTests: XCTestCase {
     }
 
     func testDay() {
-        let unit = Time.Day
+        let unit = Time.day
 
         XCTAssertEqual(unit.name, "Days")
         XCTAssertEqual(unit.symbol, "d")
@@ -27,7 +27,7 @@ class TimeTests: XCTestCase {
     }
 
     func testHour() {
-        let unit = Time.Hour
+        let unit = Time.hour
 
         XCTAssertEqual(unit.name, "Hours")
         XCTAssertEqual(unit.symbol, "h")
@@ -35,7 +35,7 @@ class TimeTests: XCTestCase {
     }
 
     func testMicrosecond() {
-        let unit = Time.Microsecond
+        let unit = Time.microsecond
 
         XCTAssertEqual(unit.name, "Microseconds")
         XCTAssertEqual(unit.symbol, "μs")
@@ -43,7 +43,7 @@ class TimeTests: XCTestCase {
     }
 
     func testMillisecond() {
-        let unit = Time.Millisecond
+        let unit = Time.millisecond
 
         XCTAssertEqual(unit.name, "Milliseconds")
         XCTAssertEqual(unit.symbol, "ms")
@@ -51,7 +51,7 @@ class TimeTests: XCTestCase {
     }
 
     func testMinute() {
-        let unit = Time.Minute
+        let unit = Time.minute
 
         XCTAssertEqual(unit.name, "Minutes")
         XCTAssertEqual(unit.symbol, "min")
@@ -59,7 +59,7 @@ class TimeTests: XCTestCase {
     }
 
     func testMonth() {
-        let unit = Time.Month
+        let unit = Time.month
 
         XCTAssertEqual(unit.name, "Months")
         XCTAssertEqual(unit.symbol, "mo")
@@ -67,7 +67,7 @@ class TimeTests: XCTestCase {
     }
 
     func testNanosecond() {
-        let unit = Time.Nanosecond
+        let unit = Time.nanosecond
 
         XCTAssertEqual(unit.name, "Nanoseconds")
         XCTAssertEqual(unit.symbol, "ns")
@@ -75,7 +75,7 @@ class TimeTests: XCTestCase {
     }
 
     func testSecond() {
-        let unit = Time.Second
+        let unit = Time.second
 
         XCTAssertEqual(unit.name, "Seconds")
         XCTAssertEqual(unit.symbol, "s")
@@ -83,7 +83,7 @@ class TimeTests: XCTestCase {
     }
 
     func testWeek() {
-        let unit = Time.Week
+        let unit = Time.week
 
         XCTAssertEqual(unit.name, "Weeks")
         XCTAssertEqual(unit.symbol, "wk")
@@ -91,7 +91,7 @@ class TimeTests: XCTestCase {
     }
 
     func testYear() {
-        let unit = Time.Year
+        let unit = Time.year
 
         XCTAssertEqual(unit.name, "Years")
         XCTAssertEqual(unit.symbol, "y")

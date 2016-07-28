@@ -3,8 +3,8 @@ import XCTest
 
 class EqualityTests: XCTestCase {
     func testQuantityEquality() {
-        let tenMeters = Quantity(10, unit: Length.Meter)
-        let anotherTenMeters = 2 * Quantity(5, unit: Length.Meter)
+        let tenMeters = Quantity(10, unit: Length.meter)
+        let anotherTenMeters = 2 * Quantity(5, unit: Length.meter)
 
         XCTAssertTrue(tenMeters == anotherTenMeters)
         XCTAssertEqual(tenMeters, anotherTenMeters)
@@ -14,8 +14,8 @@ class EqualityTests: XCTestCase {
     }
 
     func testQuantityDifference() {
-        let tenMeters = Quantity(10, unit: Length.Meter)
-        let fiveMeters = Quantity(5, unit: Length.Meter)
+        let tenMeters = Quantity(10, unit: Length.meter)
+        let fiveMeters = Quantity(5, unit: Length.meter)
 
         XCTAssertFalse(tenMeters == fiveMeters)
         XCTAssertNotEqual(tenMeters, fiveMeters)

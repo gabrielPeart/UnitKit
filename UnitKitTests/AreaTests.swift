@@ -3,7 +3,7 @@ import XCTest
 
 class AreaTests: XCTestCase {
     func testAcre() {
-        let unit = Area.Acre
+        let unit = Area.acre
 
         XCTAssertEqual(unit.name, "Acres")
         XCTAssertEqual(unit.symbol, "ac")
@@ -11,7 +11,7 @@ class AreaTests: XCTestCase {
     }
 
     func testAre() {
-        let unit = Area.Are
+        let unit = Area.are
 
         XCTAssertEqual(unit.name, "Ares")
         XCTAssertEqual(unit.symbol, "dam²")
@@ -19,7 +19,7 @@ class AreaTests: XCTestCase {
     }
 
     func testHectare() {
-        let unit = Area.Hectare
+        let unit = Area.hectare
 
         XCTAssertEqual(unit.name, "Hectares")
         XCTAssertEqual(unit.symbol, "ha")
@@ -27,7 +27,7 @@ class AreaTests: XCTestCase {
     }
 
     func testSquareCentimeter() {
-        let unit = Area.SquareCentimeter
+        let unit = Area.squareCentimeter
 
         XCTAssertEqual(unit.name, "Square Centimeters")
         XCTAssertEqual(unit.symbol, "cm²")
@@ -35,7 +35,7 @@ class AreaTests: XCTestCase {
     }
 
     func testSquareDecimeter() {
-        let unit = Area.SquareDecimeter
+        let unit = Area.squareDecimeter
 
         XCTAssertEqual(unit.name, "Square Decimeters")
         XCTAssertEqual(unit.symbol, "dm²")
@@ -43,7 +43,7 @@ class AreaTests: XCTestCase {
     }
 
     func testSquareFoot() {
-        let unit = Area.SquareFoot
+        let unit = Area.squareFoot
 
         XCTAssertEqual(unit.name, "Square Feet")
         XCTAssertEqual(unit.symbol, "sq ft")
@@ -51,7 +51,7 @@ class AreaTests: XCTestCase {
     }
 
     func testSquareInch() {
-        let unit = Area.SquareInch
+        let unit = Area.squareInch
 
         XCTAssertEqual(unit.name, "Square Inches")
         XCTAssertEqual(unit.symbol, "sq in")
@@ -59,7 +59,7 @@ class AreaTests: XCTestCase {
     }
 
     func testSquareKilometer() {
-        let unit = Area.SquareKilometer
+        let unit = Area.squareKilometer
 
         XCTAssertEqual(unit.name, "Square Kilometers")
         XCTAssertEqual(unit.symbol, "km²")
@@ -67,7 +67,7 @@ class AreaTests: XCTestCase {
     }
 
     func testSquareMeter() {
-        let unit = Area.SquareMeter
+        let unit = Area.squareMeter
 
         XCTAssertEqual(unit.name, "Square Meters")
         XCTAssertEqual(unit.symbol, "m²")
@@ -75,7 +75,7 @@ class AreaTests: XCTestCase {
     }
 
     func testSquareMile() {
-        let unit = Area.SquareMile
+        let unit = Area.squareMile
 
         XCTAssertEqual(unit.name, "Square Miles")
         XCTAssertEqual(unit.symbol, "sq mi")
@@ -83,7 +83,7 @@ class AreaTests: XCTestCase {
     }
 
     func testSquareMillimeter() {
-        let unit = Area.SquareMillimeter
+        let unit = Area.squareMillimeter
 
         XCTAssertEqual(unit.name, "Square Millimeters")
         XCTAssertEqual(unit.symbol, "mm²")
@@ -91,7 +91,7 @@ class AreaTests: XCTestCase {
     }
 
     func testSquareYard() {
-        let unit = Area.SquareYard
+        let unit = Area.squareYard
 
         XCTAssertEqual(unit.name, "Square Yards")
         XCTAssertEqual(unit.symbol, "sq yd")
